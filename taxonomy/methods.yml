@@ -2,7 +2,7 @@ schema_version: "1.0"
 methods:
   unsupervised-learning:
     label: "Unsupervised Learning"
-    repository: "LystadJS/method-unsupervised-learning"
+    repository: "LystadJS/Unsupervised-Machine-Learning"
     parents: []
     description: "Methods for learning structure, similarity, latent organization, and representation from unlabeled data."
   clustering:
