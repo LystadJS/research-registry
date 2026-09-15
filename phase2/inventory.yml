@@ -13,8 +13,8 @@ repositories:
     manifest: "draft-manifests/projects/ai-governance-non-proliferation.project.yml"
     rename_policy: coordinated-later
     rename_priority: medium
-    readiness: manifest-draft-ready
-    notes: "Current repository contains a PCoA reproduction pipeline and publication-oriented strategic-terrain visualization code. Rename should follow project-scope and visibility review."
+    readiness: manifest-deployed
+    notes: "Current repository contains a PCoA reproduction pipeline and publication-oriented strategic-terrain visualization code. Keep the working repository private and create a sanitized public layer later."
 
   - current_repository: "LystadJS/APSTA-GE-2012-Causal-Inference"
     visibility: private
@@ -49,8 +49,8 @@ repositories:
     manifest: "draft-manifests/projects/islamic-state-ethnosectarian-attack-patterns.project.yml"
     rename_policy: coordinated-later
     rename_priority: medium
-    readiness: manifest-draft-ready
-    notes: "Mature public research workspace with substantial reproducibility/provenance structure. Existing website and profile links create a coordinated-update requirement before rename."
+    readiness: manifest-deployed
+    notes: "Mature public research workspace with substantial reproducibility/provenance structure. Broad workspace scope is approved; existing website and profile links create a coordinated-update requirement before rename."
 
   - current_repository: "LystadJS/draftmapR"
     visibility: private
@@ -61,8 +61,8 @@ repositories:
     manifest: "draft-manifests/projects/longitudinal-embedding-alignment.project.yml"
     rename_policy: hold-until-package-name-frozen
     rename_priority: blocked
-    readiness: manifest-draft-ready
-    notes: "Repository currently contains the driftmapR package prototype under a nested driftmapR directory. Future repository name should equal the final package name rather than use a project-* prefix."
+    readiness: deferred-package-name
+    notes: "Repository currently contains the driftmapR package prototype under a nested driftmapR directory. Keep the repository untouched until the final package name is frozen; the future repository name should equal that package name."
 
   - current_repository: "LystadJS/LystadJS"
     visibility: public
@@ -109,8 +109,8 @@ repositories:
     manifest: "draft-manifests/projects/un-transcript-voting-alignment.project.yml"
     rename_policy: coordinated-later
     rename_priority: medium
-    readiness: manifest-draft-ready
-    notes: "Public shell for transcript intelligence and changing UN voting alignment. Existing website/profile links require coordinated updates before rename."
+    readiness: manifest-deployed
+    notes: "Public shell for transcript intelligence and changing UN voting alignment. Keep intact during migration; later split the reusable transcript/evidence engine from the empirical voting-alignment project. Existing website/profile links require coordinated updates before rename."
 
   - current_repository: "LystadJS/Unsupervised-Machine-Learning"
     visibility: public
@@ -121,5 +121,5 @@ repositories:
     manifest: "draft-manifests/methods/unsupervised-learning.method.yml"
     rename_policy: coordinated-later
     rename_priority: high
-    readiness: manifest-draft-ready
-    notes: "Existing documentation-only reference repository already functions conceptually as the umbrella unsupervised-learning method hub. Website/profile links require coordinated updates before rename."
+    readiness: manifest-deployed
+    notes: "Existing documentation-only reference repository is now the validated transitional unsupervised-learning method hub. Website/profile links require coordinated updates before any rename."
