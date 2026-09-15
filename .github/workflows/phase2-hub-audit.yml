@@ -1,0 +1,123 @@
+name: Phase 2 Hub Audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/phase2-hub-audit.yml"
+      - "schema/**"
+      - "taxonomy/**"
+      - "scripts/**"
+      - "phase2/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out registry
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Fetch and validate live method hubs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/hub-audit/methods
+          repos=(
+            method-clustering
+            method-dimension-reduction
+            method-network-analysis
+            method-missing-data
+            method-longitudinal-multilevel
+            method-spatial-statistics
+            method-statistical-computing
+          )
+          for repo in "${repos[@]}"; do
+            curl -fsSL "https://raw.githubusercontent.com/LystadJS/${repo}/main/.research/method.yml" -o "/tmp/hub-audit/methods/${repo}.yml"
+            curl -fsSL "https://raw.githubusercontent.com/LystadJS/${repo}/main/README.md" -o "/tmp/hub-audit/methods/${repo}.README.md"
+            python scripts/validate_manifest.py --type method --file "/tmp/hub-audit/methods/${repo}.yml"
+            grep -q '<!-- JSL:AUTO-PROJECTS:START -->' "/tmp/hub-audit/methods/${repo}.README.md"
+            grep -q '<!-- JSL:AUTO-PROJECTS:END -->' "/tmp/hub-audit/methods/${repo}.README.md"
+          done
+
+      - name: Fetch and validate live domain hubs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/hub-audit/domains
+          repos=(
+            domain-political-violence
+            domain-terrorism-counterterrorism
+            domain-humanitarian-response
+            domain-human-security
+            domain-emerging-technology
+            domain-anthropocene-human-ecology
+          )
+          for repo in "${repos[@]}"; do
+            curl -fsSL "https://raw.githubusercontent.com/LystadJS/${repo}/main/.research/domain.yml" -o "/tmp/hub-audit/domains/${repo}.yml"
+            curl -fsSL "https://raw.githubusercontent.com/LystadJS/${repo}/main/README.md" -o "/tmp/hub-audit/domains/${repo}.README.md"
+            python scripts/validate_manifest.py --type domain --file "/tmp/hub-audit/domains/${repo}.yml"
+            grep -q '<!-- JSL:AUTO-METHODS:START -->' "/tmp/hub-audit/domains/${repo}.README.md"
+            grep -q '<!-- JSL:AUTO-METHODS:END -->' "/tmp/hub-audit/domains/${repo}.README.md"
+            grep -q '<!-- JSL:AUTO-PROJECTS:START -->' "/tmp/hub-audit/domains/${repo}.README.md"
+            grep -q '<!-- JSL:AUTO-PROJECTS:END -->' "/tmp/hub-audit/domains/${repo}.README.md"
+          done
+
+      - name: Assert canonical hub identities
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          expected_methods = {
+              "clustering": "LystadJS/method-clustering",
+              "dimension-reduction": "LystadJS/method-dimension-reduction",
+              "network-analysis": "LystadJS/method-network-analysis",
+              "missing-data": "LystadJS/method-missing-data",
+              "longitudinal-multilevel": "LystadJS/method-longitudinal-multilevel",
+              "spatial-statistics": "LystadJS/method-spatial-statistics",
+              "statistical-computing": "LystadJS/method-statistical-computing",
+          }
+          expected_domains = {
+              "political-violence": "LystadJS/domain-political-violence",
+              "terrorism-counterterrorism": "LystadJS/domain-terrorism-counterterrorism",
+              "humanitarian-response": "LystadJS/domain-humanitarian-response",
+              "human-security": "LystadJS/domain-human-security",
+              "emerging-technology": "LystadJS/domain-emerging-technology",
+              "anthropocene-human-ecology": "LystadJS/domain-anthropocene-human-ecology",
+          }
+
+          seen_methods = {}
+          for path in Path("/tmp/hub-audit/methods").glob("*.yml"):
+              data = yaml.safe_load(path.read_text())
+              meta = data["method"]
+              seen_methods[meta["id"]] = meta["repository"]
+          seen_domains = {}
+          for path in Path("/tmp/hub-audit/domains").glob("*.yml"):
+              data = yaml.safe_load(path.read_text())
+              meta = data["domain"]
+              seen_domains[meta["id"]] = meta["repository"]
+
+          assert seen_methods == expected_methods, (seen_methods, expected_methods)
+          assert seen_domains == expected_domains, (seen_domains, expected_domains)
+          print("Live Phase 2 hub identities match the frozen registry taxonomy.")
+          PY
+
+      - name: Upload live hub audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase2-hub-audit
+          path: /tmp/hub-audit
