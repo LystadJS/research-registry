@@ -1,0 +1,59 @@
+name: Synchronize Public Research Registry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-public-registry.yml"
+      - "scripts/**"
+      - "taxonomy/**"
+      - "schema/**"
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out registry
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Discover public projects
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover_projects.py --owner LystadJS --output-dir /tmp/jsl-public-projects
+
+      - name: Validate public project manifests
+        run: python scripts/validate_manifest.py --type project --manifest-dir /tmp/jsl-public-projects
+
+      - name: Build normalized web registry
+        run: python scripts/build_web_registry.py --manifest-dir /tmp/jsl-public-projects --output-dir dist
+
+      - name: Build research graph
+        run: python scripts/build_research_graph.py --manifest-dir /tmp/jsl-public-projects --output dist/research-graph.json
+
+      - name: Commit updated registry artifacts
+        shell: bash
+        run: |
+          if git diff --quiet -- dist; then
+            echo "Public registry is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist
+          git commit -m "Synchronize public research registry"
+          git push
