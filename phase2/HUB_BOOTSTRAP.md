@@ -1,12 +1,13 @@
 # Method and Domain Hub Bootstrap
 
-P2-F proved that the live registry can discover and validate existing project metadata. The next safe step is to create the missing hub repositories without renaming any current project repository.
+**Status:** Complete  
+**Completed:** 2026-09-15
 
-## Repositories to create
+P2-F proved that the live registry could discover and validate existing project metadata. The approved hub bootstrap has now been executed without renaming any existing project repository.
 
-### Method hubs
+## Published method hubs
 
-The existing `Unsupervised-Machine-Learning` repository already serves as the transitional `unsupervised-learning` hub. Create the remaining seven canonical hubs:
+The existing `Unsupervised-Machine-Learning` repository remains the transitional `unsupervised-learning` umbrella hub. The remaining seven canonical method hubs are live:
 
 - `method-clustering`
 - `method-dimension-reduction`
@@ -16,9 +17,9 @@ The existing `Unsupervised-Machine-Learning` repository already serves as the tr
 - `method-spatial-statistics`
 - `method-statistical-computing`
 
-### Domain hubs
+## Published domain hubs
 
-Create all six canonical domain hubs:
+All six canonical domain hubs are live:
 
 - `domain-political-violence`
 - `domain-terrorism-counterterrorism`
@@ -27,17 +28,9 @@ Create all six canonical domain hubs:
 - `domain-emerging-technology`
 - `domain-anthropocene-human-ecology`
 
-## Generate the scaffold
+## Hub structure
 
-From `research-registry`:
-
-```bash
-python scripts/scaffold_hubs.py \
-  --output-dir /tmp/jsl-hubs \
-  --skip-method unsupervised-learning
-```
-
-The command generates **7 method hubs and 6 domain hubs**. Each output repository contains:
+Each hub was generated from the frozen taxonomy using `scripts/scaffold_hubs.py` and contains:
 
 ```text
 README.md
@@ -51,17 +44,33 @@ README.md
 .research/domain.yml
 ```
 
-The READMEs use the standard auto-generation markers from v1.0 so projects can be indexed later without overwriting human-authored material.
+The README auto-generation markers remain intact so registered projects can be indexed without overwriting human-authored methodological or substantive material.
 
-## Publication contract
+## Validation
 
-1. Create each repository as **public** unless a later review identifies a reason not to.
-2. Use the exact canonical repository names above.
-3. Do not initialize with generated boilerplate that would conflict with the scaffold; an empty repository or one initialized with a temporary README is acceptable.
-4. Publish the generated `.research/` manifest and README before adding method notes or project indexes.
-5. Validate each hub against `research-registry` after publication.
-6. Do not rename existing project repositories as part of hub creation.
+The `Phase 2 Hub Audit` GitHub Actions workflow fetches the live manifests directly from the published repositories and verifies:
 
-## Why hub creation precedes renaming
+1. schema validity;
+2. controlled-vocabulary validity;
+3. canonical IDs;
+4. repository pointers; and
+5. required README auto-generation markers.
 
-Canonical IDs already connect projects to methods and domains. Creating hubs first gives every future website tag a stable destination while leaving existing public project URLs untouched. Repository renames can then occur later as a coordinated link migration rather than being coupled to the research-graph rollout.
+The first live audit completed successfully.
+
+## Initial cross-link population
+
+The currently public project manifests have been used to populate hub indexes conservatively:
+
+- the Islamic State / ethnosectarian attack-pattern project is indexed under Spatial and Geographic Statistics, Missing Data and Measurement, Statistical Computing and Visualization, Political Violence, Terrorism and Responses to Terrorism, and Human Security;
+- the UN transcript/voting-alignment project is indexed under Statistical Computing and Visualization, Network Analysis, and Longitudinal and Multilevel Statistics;
+- hubs with no currently public registered project retain an empty-state message rather than inventing project associations;
+- the private AI-governance working repository is not exposed through public project indexes until the approved sanitized public layer exists.
+
+## Website and profile integration
+
+The portfolio's empirical-map and Research-page tag routing now points method and substantive-domain labels to these hubs. The GitHub profile README also exposes the complete method-hub and domain-hub architecture.
+
+## Remaining migration boundary
+
+Hub creation does not authorize project-repository renames. Existing project URLs remain unchanged. Coordinated renames, public/private AI-governance separation, and the final `draftmapR` package/repository name remain later Phase 2 work.
