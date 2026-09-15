@@ -1,0 +1,70 @@
+{
+  "unsupervised-learning": {
+    "id": "unsupervised-learning",
+    "label": "Unsupervised Learning",
+    "repository": "LystadJS/method-unsupervised-learning",
+    "url": "https://github.com/LystadJS/method-unsupervised-learning",
+    "description": "Methods for learning structure, similarity, latent organization, and representation from unlabeled data.",
+    "parents": []
+  },
+  "clustering": {
+    "id": "clustering",
+    "label": "Cluster Analysis",
+    "repository": "LystadJS/method-clustering",
+    "url": "https://github.com/LystadJS/method-clustering",
+    "description": "Methods for identifying groups, latent structure, and heterogeneous subpopulations.",
+    "parents": [
+      "unsupervised-learning"
+    ]
+  },
+  "dimension-reduction": {
+    "id": "dimension-reduction",
+    "label": "Dimension Reduction",
+    "repository": "LystadJS/method-dimension-reduction",
+    "url": "https://github.com/LystadJS/method-dimension-reduction",
+    "description": "Methods for representing high-dimensional structure in lower-dimensional spaces.",
+    "parents": [
+      "unsupervised-learning"
+    ]
+  },
+  "network-analysis": {
+    "id": "network-analysis",
+    "label": "Network Analysis",
+    "repository": "LystadJS/method-network-analysis",
+    "url": "https://github.com/LystadJS/method-network-analysis",
+    "description": "Statistical and computational analysis of relational structure, communities, diffusion, and network dynamics.",
+    "parents": []
+  },
+  "missing-data": {
+    "id": "missing-data",
+    "label": "Missing Data and Measurement",
+    "repository": "LystadJS/method-missing-data",
+    "url": "https://github.com/LystadJS/method-missing-data",
+    "description": "Methods for inference, sensitivity, and measurement under incomplete or imperfectly observed data.",
+    "parents": []
+  },
+  "longitudinal-multilevel": {
+    "id": "longitudinal-multilevel",
+    "label": "Longitudinal and Multilevel Statistics",
+    "repository": "LystadJS/method-longitudinal-multilevel",
+    "url": "https://github.com/LystadJS/method-longitudinal-multilevel",
+    "description": "Methods for repeated observations, nested data, trajectories, and hierarchical dependence.",
+    "parents": []
+  },
+  "spatial-statistics": {
+    "id": "spatial-statistics",
+    "label": "Spatial and Geographic Statistics",
+    "repository": "LystadJS/method-spatial-statistics",
+    "url": "https://github.com/LystadJS/method-spatial-statistics",
+    "description": "Methods for spatial dependence, geographic structure, and place-based inference.",
+    "parents": []
+  },
+  "statistical-computing": {
+    "id": "statistical-computing",
+    "label": "Statistical Computing and Visualization",
+    "repository": "LystadJS/method-statistical-computing",
+    "url": "https://github.com/LystadJS/method-statistical-computing",
+    "description": "Reproducible statistical programming, simulation, computational workflows, and analytical visualization.",
+    "parents": []
+  }
+}

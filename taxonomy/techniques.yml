@@ -1,0 +1,101 @@
+schema_version: "1.0"
+techniques:
+  k-means:
+    label: "K-Means"
+    methods: [clustering]
+  hierarchical-clustering:
+    label: "Hierarchical Clustering"
+    methods: [clustering]
+  dbscan:
+    label: "DBSCAN"
+    methods: [clustering]
+  hdbscan:
+    label: "HDBSCAN"
+    methods: [clustering]
+  fuzzy-clustering:
+    label: "Fuzzy Clustering"
+    methods: [clustering]
+  mixture-models:
+    label: "Mixture Models"
+    methods: [clustering, unsupervised-learning]
+  expectation-maximization:
+    label: "Expectation-Maximization"
+    methods: [clustering, unsupervised-learning]
+  cluster-validation:
+    label: "Cluster Validation"
+    methods: [clustering]
+  pca:
+    label: "Principal Component Analysis"
+    methods: [dimension-reduction, unsupervised-learning]
+  umap:
+    label: "UMAP"
+    methods: [dimension-reduction, unsupervised-learning]
+  multidimensional-scaling:
+    label: "Multidimensional Scaling"
+    methods: [dimension-reduction, unsupervised-learning]
+  tsne:
+    label: "t-SNE"
+    methods: [dimension-reduction, unsupervised-learning]
+  procrustes-alignment:
+    label: "Procrustes Alignment"
+    methods: [dimension-reduction, statistical-computing]
+  community-detection:
+    label: "Community Detection"
+    methods: [network-analysis, unsupervised-learning]
+  centrality:
+    label: "Centrality Analysis"
+    methods: [network-analysis]
+  network-construction:
+    label: "Network Construction"
+    methods: [network-analysis]
+  diffusion-analysis:
+    label: "Diffusion Analysis"
+    methods: [network-analysis, longitudinal-multilevel]
+  dynamic-networks:
+    label: "Dynamic Networks"
+    methods: [network-analysis, longitudinal-multilevel]
+  multiple-imputation:
+    label: "Multiple Imputation"
+    methods: [missing-data]
+  mice:
+    label: "Multiple Imputation by Chained Equations"
+    methods: [missing-data]
+  missingness-diagnostics:
+    label: "Missingness Diagnostics"
+    methods: [missing-data]
+  sensitivity-analysis:
+    label: "Sensitivity Analysis"
+    methods: [missing-data, statistical-computing]
+  multilevel-modeling:
+    label: "Multilevel Modeling"
+    methods: [longitudinal-multilevel]
+  longitudinal-analysis:
+    label: "Longitudinal Analysis"
+    methods: [longitudinal-multilevel]
+  mixed-effects-modeling:
+    label: "Mixed-Effects Modeling"
+    methods: [longitudinal-multilevel]
+  spatial-analysis:
+    label: "Spatial Analysis"
+    methods: [spatial-statistics]
+  population-weighted-geography:
+    label: "Population-Weighted Geography"
+    methods: [spatial-statistics]
+  spatial-visualization:
+    label: "Spatial Visualization"
+    methods: [spatial-statistics, statistical-computing]
+  statistical-modeling:
+    label: "Statistical Modeling"
+    methods: [statistical-computing]
+  simulation:
+    label: "Simulation"
+    methods: [statistical-computing]
+  bootstrap:
+    label: "Bootstrap"
+    methods: [statistical-computing]
+  data-visualization:
+    label: "Data Visualization"
+    methods: [statistical-computing]
+  reproducible-computing:
+    label: "Reproducible Computing"
+    methods: [statistical-computing]

@@ -1,0 +1,37 @@
+schema_version: "1.0"
+project:
+  id: protecting-aid-workers
+  title: "Protecting Aid Workers"
+  short_title: "Protecting Aid Workers"
+  repository: "LystadJS/project-protecting-aid-workers"
+  type: applied-research
+  status: active
+  featured: true
+  summary: "Analysis of threats to humanitarian personnel, operating access, and civilian-protection environments across conflict settings."
+methods:
+  - id: clustering
+    role: supporting
+    techniques: [hierarchical-clustering]
+    usage: "Used to identify recurring patterns across heterogeneous operational environments."
+  - id: network-analysis
+    role: supporting
+    techniques: [network-construction, centrality]
+    usage: "Used to examine relationships among actors and operational environments."
+domains: [humanitarian-response, human-security]
+contexts: [united-nations, applied-analysis, multilateral-policy]
+geography:
+  scope: multilateral
+  countries: []
+  map_countries: [SY, MM, PS, IL, RU, UA, LB, IR]
+  note: "Mapped countries indicate explicit analytical coverage rather than separate national studies."
+software: [R]
+keywords: [humanitarian-access, civilian-protection, conflict, aid-workers]
+outputs:
+  - type: portfolio
+    label: "Research portfolio entry"
+    url: "https://lystadjs.github.io/research.html#project-protecting-aid-workers"
+access:
+  repository_visibility: public
+  data_access: restricted
+  code_access: partial
+  disclosure: "Public materials contain only releasable, unclassified, open-source analytical content."

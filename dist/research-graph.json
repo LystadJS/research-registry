@@ -1,0 +1,542 @@
+{
+  "schema_version": "1.0",
+  "nodes": [
+    {
+      "id": "context:academic-research",
+      "type": "context",
+      "label": "Academic Research"
+    },
+    {
+      "id": "context:applied-analysis",
+      "type": "context",
+      "label": "Applied Analysis"
+    },
+    {
+      "id": "context:foreign-correspondence",
+      "type": "context",
+      "label": "Foreign Correspondence"
+    },
+    {
+      "id": "context:humanitarian-operations",
+      "type": "context",
+      "label": "Humanitarian Operations"
+    },
+    {
+      "id": "context:independent-reporting",
+      "type": "context",
+      "label": "Independent Reporting"
+    },
+    {
+      "id": "context:investigative-journalism",
+      "type": "context",
+      "label": "Investigative Journalism"
+    },
+    {
+      "id": "context:military-service",
+      "type": "context",
+      "label": "Military Service"
+    },
+    {
+      "id": "context:multilateral-policy",
+      "type": "context",
+      "label": "Multilateral Policy"
+    },
+    {
+      "id": "context:multinational-security-cooperation",
+      "type": "context",
+      "label": "Multinational Security Cooperation"
+    },
+    {
+      "id": "context:open-source-intelligence",
+      "type": "context",
+      "label": "Open-Source Intelligence"
+    },
+    {
+      "id": "context:operational-analysis",
+      "type": "context",
+      "label": "Operational Analysis"
+    },
+    {
+      "id": "context:senior-decision-support",
+      "type": "context",
+      "label": "Senior Decision Support"
+    },
+    {
+      "id": "context:united-nations",
+      "type": "context",
+      "label": "United Nations"
+    },
+    {
+      "id": "domain:anthropocene-human-ecology",
+      "type": "domain",
+      "label": "Anthropocene Dynamics and Human Ecology"
+    },
+    {
+      "id": "domain:emerging-technology",
+      "type": "domain",
+      "label": "Emerging Technology"
+    },
+    {
+      "id": "domain:human-security",
+      "type": "domain",
+      "label": "Human Security"
+    },
+    {
+      "id": "domain:humanitarian-response",
+      "type": "domain",
+      "label": "Humanitarian Response"
+    },
+    {
+      "id": "domain:political-violence",
+      "type": "domain",
+      "label": "Political Violence"
+    },
+    {
+      "id": "domain:terrorism-counterterrorism",
+      "type": "domain",
+      "label": "Terrorism and Responses to Terrorism"
+    },
+    {
+      "id": "method:clustering",
+      "type": "method",
+      "label": "Cluster Analysis"
+    },
+    {
+      "id": "method:dimension-reduction",
+      "type": "method",
+      "label": "Dimension Reduction"
+    },
+    {
+      "id": "method:longitudinal-multilevel",
+      "type": "method",
+      "label": "Longitudinal and Multilevel Statistics"
+    },
+    {
+      "id": "method:missing-data",
+      "type": "method",
+      "label": "Missing Data and Measurement"
+    },
+    {
+      "id": "method:network-analysis",
+      "type": "method",
+      "label": "Network Analysis"
+    },
+    {
+      "id": "method:spatial-statistics",
+      "type": "method",
+      "label": "Spatial and Geographic Statistics"
+    },
+    {
+      "id": "method:statistical-computing",
+      "type": "method",
+      "label": "Statistical Computing and Visualization"
+    },
+    {
+      "id": "method:unsupervised-learning",
+      "type": "method",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "id": "technique:bootstrap",
+      "type": "technique",
+      "label": "Bootstrap"
+    },
+    {
+      "id": "technique:centrality",
+      "type": "technique",
+      "label": "Centrality Analysis"
+    },
+    {
+      "id": "technique:cluster-validation",
+      "type": "technique",
+      "label": "Cluster Validation"
+    },
+    {
+      "id": "technique:community-detection",
+      "type": "technique",
+      "label": "Community Detection"
+    },
+    {
+      "id": "technique:data-visualization",
+      "type": "technique",
+      "label": "Data Visualization"
+    },
+    {
+      "id": "technique:dbscan",
+      "type": "technique",
+      "label": "DBSCAN"
+    },
+    {
+      "id": "technique:diffusion-analysis",
+      "type": "technique",
+      "label": "Diffusion Analysis"
+    },
+    {
+      "id": "technique:dynamic-networks",
+      "type": "technique",
+      "label": "Dynamic Networks"
+    },
+    {
+      "id": "technique:expectation-maximization",
+      "type": "technique",
+      "label": "Expectation-Maximization"
+    },
+    {
+      "id": "technique:fuzzy-clustering",
+      "type": "technique",
+      "label": "Fuzzy Clustering"
+    },
+    {
+      "id": "technique:hdbscan",
+      "type": "technique",
+      "label": "HDBSCAN"
+    },
+    {
+      "id": "technique:hierarchical-clustering",
+      "type": "technique",
+      "label": "Hierarchical Clustering"
+    },
+    {
+      "id": "technique:k-means",
+      "type": "technique",
+      "label": "K-Means"
+    },
+    {
+      "id": "technique:longitudinal-analysis",
+      "type": "technique",
+      "label": "Longitudinal Analysis"
+    },
+    {
+      "id": "technique:missingness-diagnostics",
+      "type": "technique",
+      "label": "Missingness Diagnostics"
+    },
+    {
+      "id": "technique:mixed-effects-modeling",
+      "type": "technique",
+      "label": "Mixed-Effects Modeling"
+    },
+    {
+      "id": "technique:mixture-models",
+      "type": "technique",
+      "label": "Mixture Models"
+    },
+    {
+      "id": "technique:multidimensional-scaling",
+      "type": "technique",
+      "label": "Multidimensional Scaling"
+    },
+    {
+      "id": "technique:multilevel-modeling",
+      "type": "technique",
+      "label": "Multilevel Modeling"
+    },
+    {
+      "id": "technique:multiple-imputation",
+      "type": "technique",
+      "label": "Multiple Imputation"
+    },
+    {
+      "id": "technique:mice",
+      "type": "technique",
+      "label": "Multiple Imputation by Chained Equations"
+    },
+    {
+      "id": "technique:network-construction",
+      "type": "technique",
+      "label": "Network Construction"
+    },
+    {
+      "id": "technique:population-weighted-geography",
+      "type": "technique",
+      "label": "Population-Weighted Geography"
+    },
+    {
+      "id": "technique:pca",
+      "type": "technique",
+      "label": "Principal Component Analysis"
+    },
+    {
+      "id": "technique:procrustes-alignment",
+      "type": "technique",
+      "label": "Procrustes Alignment"
+    },
+    {
+      "id": "technique:reproducible-computing",
+      "type": "technique",
+      "label": "Reproducible Computing"
+    },
+    {
+      "id": "technique:sensitivity-analysis",
+      "type": "technique",
+      "label": "Sensitivity Analysis"
+    },
+    {
+      "id": "technique:simulation",
+      "type": "technique",
+      "label": "Simulation"
+    },
+    {
+      "id": "technique:spatial-analysis",
+      "type": "technique",
+      "label": "Spatial Analysis"
+    },
+    {
+      "id": "technique:spatial-visualization",
+      "type": "technique",
+      "label": "Spatial Visualization"
+    },
+    {
+      "id": "technique:statistical-modeling",
+      "type": "technique",
+      "label": "Statistical Modeling"
+    },
+    {
+      "id": "technique:tsne",
+      "type": "technique",
+      "label": "t-SNE"
+    },
+    {
+      "id": "technique:umap",
+      "type": "technique",
+      "label": "UMAP"
+    }
+  ],
+  "edges": [
+    {
+      "source": "method:clustering",
+      "target": "technique:cluster-validation",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:clustering",
+      "target": "technique:dbscan",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:clustering",
+      "target": "technique:expectation-maximization",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:clustering",
+      "target": "technique:fuzzy-clustering",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:clustering",
+      "target": "technique:hdbscan",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:clustering",
+      "target": "technique:hierarchical-clustering",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:clustering",
+      "target": "technique:k-means",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:clustering",
+      "target": "technique:mixture-models",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:dimension-reduction",
+      "target": "technique:multidimensional-scaling",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:dimension-reduction",
+      "target": "technique:pca",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:dimension-reduction",
+      "target": "technique:procrustes-alignment",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:dimension-reduction",
+      "target": "technique:tsne",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:dimension-reduction",
+      "target": "technique:umap",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:longitudinal-multilevel",
+      "target": "technique:diffusion-analysis",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:longitudinal-multilevel",
+      "target": "technique:dynamic-networks",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:longitudinal-multilevel",
+      "target": "technique:longitudinal-analysis",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:longitudinal-multilevel",
+      "target": "technique:mixed-effects-modeling",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:longitudinal-multilevel",
+      "target": "technique:multilevel-modeling",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:missing-data",
+      "target": "technique:mice",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:missing-data",
+      "target": "technique:missingness-diagnostics",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:missing-data",
+      "target": "technique:multiple-imputation",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:missing-data",
+      "target": "technique:sensitivity-analysis",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:network-analysis",
+      "target": "technique:centrality",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:network-analysis",
+      "target": "technique:community-detection",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:network-analysis",
+      "target": "technique:diffusion-analysis",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:network-analysis",
+      "target": "technique:dynamic-networks",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:network-analysis",
+      "target": "technique:network-construction",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:spatial-statistics",
+      "target": "technique:population-weighted-geography",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:spatial-statistics",
+      "target": "technique:spatial-analysis",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:spatial-statistics",
+      "target": "technique:spatial-visualization",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:bootstrap",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:data-visualization",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:procrustes-alignment",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:reproducible-computing",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:sensitivity-analysis",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:simulation",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:spatial-visualization",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:statistical-computing",
+      "target": "technique:statistical-modeling",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "method:clustering",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "method:dimension-reduction",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "technique:community-detection",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "technique:expectation-maximization",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "technique:mixture-models",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "technique:multidimensional-scaling",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "technique:pca",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "technique:tsne",
+      "type": "PARENT_OF"
+    },
+    {
+      "source": "method:unsupervised-learning",
+      "target": "technique:umap",
+      "type": "PARENT_OF"
+    }
+  ]
+}

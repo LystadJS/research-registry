@@ -1,0 +1,16 @@
+[project]
+name = "jsl-research-registry"
+version = "1.0.0"
+description = "Schemas, controlled vocabularies, validators, and index builders for the JSL research portfolio graph."
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0,<7",
+  "jsonschema>=4.20,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

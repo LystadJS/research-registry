@@ -1,0 +1,41 @@
+name: Validate Research Registry
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Validate controlled vocabularies
+        run: python scripts/validate_taxonomy.py
+
+      - name: Run tests
+        run: pytest
+
+      - name: Validate fixture project collection
+        run: python scripts/validate_manifest.py --type project --manifest-dir tests/fixtures/projects
+
+      - name: Build acceptance-test registry
+        run: python scripts/build_web_registry.py --manifest-dir tests/fixtures/projects --output-dir /tmp/jsl-registry
+
+      - name: Build acceptance-test research graph
+        run: python scripts/build_research_graph.py --manifest-dir tests/fixtures/projects --output /tmp/jsl-registry/research-graph.json

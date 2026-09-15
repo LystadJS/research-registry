@@ -1,0 +1,23 @@
+schema_version: "1.0"
+project:
+  id: invalid-example
+  title: "Invalid Example Project"
+  repository: "LystadJS/project-invalid-example"
+  type: applied-research
+  status: active
+  summary: "This fixture is intentionally invalid because it references an unknown method identifier."
+methods:
+  - id: imaginary-method
+    role: primary
+    techniques: []
+domains: [human-security]
+contexts: [applied-analysis]
+geography:
+  scope: global
+  countries: []
+  map_countries: []
+access:
+  repository_visibility: public
+  data_access: none
+  code_access: none
+  disclosure: "This fixture contains no substantive research data."

@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lystadjs.github.io/schema/project.schema.json",
+  "title": "JSL Research Project Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project",
+    "methods",
+    "domains",
+    "contexts",
+    "geography",
+    "access"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "repository",
+        "type",
+        "status",
+        "summary"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "short_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "pattern": "^LystadJS/[A-Za-z0-9._-]+$"
+        },
+        "type": {
+          "enum": [
+            "academic-research",
+            "applied-research",
+            "software",
+            "technical-project"
+          ]
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "active",
+            "complete",
+            "published",
+            "archived"
+          ]
+        },
+        "featured": {
+          "type": "boolean"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    },
+    "methods": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "role"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "role": {
+            "enum": [
+              "primary",
+              "secondary",
+              "supporting"
+            ]
+          },
+          "techniques": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          },
+          "usage": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "domains": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "contexts": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "geography": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "countries",
+        "map_countries"
+      ],
+      "properties": {
+        "scope": {
+          "enum": [
+            "country-specific",
+            "regional",
+            "multilateral",
+            "global",
+            "mixed"
+          ]
+        },
+        "countries": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        },
+        "map_countries": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "software": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "label"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository_visibility",
+        "data_access",
+        "code_access",
+        "disclosure"
+      ],
+      "properties": {
+        "repository_visibility": {
+          "enum": [
+            "public",
+            "private"
+          ]
+        },
+        "data_access": {
+          "enum": [
+            "open",
+            "restricted",
+            "mixed",
+            "none"
+          ]
+        },
+        "code_access": {
+          "enum": [
+            "full",
+            "partial",
+            "none"
+          ]
+        },
+        "disclosure": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    }
+  }
+}

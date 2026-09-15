@@ -1,0 +1,37 @@
+schema_version: "1.0"
+project:
+  id: ai-governance-diffusion
+  title: "AI Governance Diffusion"
+  short_title: "AI Governance Diffusion"
+  repository: "LystadJS/project-ai-governance-diffusion"
+  type: applied-research
+  status: active
+  featured: false
+  summary: "Computational analysis of how artificial-intelligence governance instruments diffuse across national and multilateral institutions."
+methods:
+  - id: clustering
+    role: primary
+    techniques: [hierarchical-clustering, cluster-validation]
+    usage: "Used to identify recurring regulatory configurations across states and institutions."
+  - id: dimension-reduction
+    role: secondary
+    techniques: [umap]
+    usage: "Used to visualize high-dimensional similarities in governance instruments."
+  - id: network-analysis
+    role: primary
+    techniques: [network-construction, diffusion-analysis]
+    usage: "Used to represent institutional pathways and cross-venue diffusion."
+domains: [emerging-technology, human-security]
+contexts: [united-nations, applied-analysis, multilateral-policy]
+geography:
+  scope: multilateral
+  countries: []
+  map_countries: [US, CN, JP, KR, BR, IN, IL, SA, AE]
+software: [R]
+keywords: [ai-governance, diffusion, multilateral-institutions]
+outputs: []
+access:
+  repository_visibility: public
+  data_access: mixed
+  code_access: partial
+  disclosure: "Public materials exclude restricted or non-public government information."

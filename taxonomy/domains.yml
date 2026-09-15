@@ -1,0 +1,26 @@
+schema_version: "1.0"
+domains:
+  political-violence:
+    label: "Political Violence"
+    repository: "LystadJS/domain-political-violence"
+    description: "Empirical study of organized violence, conflict behavior, civilian targeting, and violent political systems."
+  terrorism-counterterrorism:
+    label: "Terrorism and Responses to Terrorism"
+    repository: "LystadJS/domain-terrorism-counterterrorism"
+    description: "Research on terrorist organizations, violent extremist behavior, and responses to terrorism."
+  humanitarian-response:
+    label: "Humanitarian Response"
+    repository: "LystadJS/domain-humanitarian-response"
+    description: "Research on humanitarian access, response effectiveness, protection, and crisis operations."
+  human-security:
+    label: "Human Security"
+    repository: "LystadJS/domain-human-security"
+    description: "Research on threats to human life, safety, welfare, and resilience across borders and institutions."
+  emerging-technology:
+    label: "Emerging Technology"
+    repository: "LystadJS/domain-emerging-technology"
+    description: "Research on the governance, diffusion, risks, and security implications of emerging technologies."
+  anthropocene-human-ecology:
+    label: "Anthropocene Dynamics and Human Ecology"
+    repository: "LystadJS/domain-anthropocene-human-ecology"
+    description: "Research on interactions among environmental change, human systems, resource stress, and security."

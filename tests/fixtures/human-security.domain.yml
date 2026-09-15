@@ -1,0 +1,8 @@
+schema_version: "1.0"
+domain:
+  id: human-security
+  label: "Human Security"
+  repository: "LystadJS/domain-human-security"
+  status: active
+  summary: "Empirical research on threats to human life, safety, welfare, and resilience across institutional and national borders."
+  related_domains: [humanitarian-response, political-violence, emerging-technology]

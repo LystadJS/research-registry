@@ -1,0 +1,28 @@
+schema_version: "1.0"
+contexts:
+  academic-research:
+    label: "Academic Research"
+  applied-analysis:
+    label: "Applied Analysis"
+  united-nations:
+    label: "United Nations"
+  multilateral-policy:
+    label: "Multilateral Policy"
+  humanitarian-operations:
+    label: "Humanitarian Operations"
+  senior-decision-support:
+    label: "Senior Decision Support"
+  military-service:
+    label: "Military Service"
+  multinational-security-cooperation:
+    label: "Multinational Security Cooperation"
+  independent-reporting:
+    label: "Independent Reporting"
+  foreign-correspondence:
+    label: "Foreign Correspondence"
+  investigative-journalism:
+    label: "Investigative Journalism"
+  open-source-intelligence:
+    label: "Open-Source Intelligence"
+  operational-analysis:
+    label: "Operational Analysis"

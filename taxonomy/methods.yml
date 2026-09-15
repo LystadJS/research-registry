@@ -1,0 +1,42 @@
+schema_version: "1.0"
+methods:
+  unsupervised-learning:
+    label: "Unsupervised Learning"
+    repository: "LystadJS/method-unsupervised-learning"
+    parents: []
+    description: "Methods for learning structure, similarity, latent organization, and representation from unlabeled data."
+  clustering:
+    label: "Cluster Analysis"
+    repository: "LystadJS/method-clustering"
+    parents: [unsupervised-learning]
+    description: "Methods for identifying groups, latent structure, and heterogeneous subpopulations."
+  dimension-reduction:
+    label: "Dimension Reduction"
+    repository: "LystadJS/method-dimension-reduction"
+    parents: [unsupervised-learning]
+    description: "Methods for representing high-dimensional structure in lower-dimensional spaces."
+  network-analysis:
+    label: "Network Analysis"
+    repository: "LystadJS/method-network-analysis"
+    parents: []
+    description: "Statistical and computational analysis of relational structure, communities, diffusion, and network dynamics."
+  missing-data:
+    label: "Missing Data and Measurement"
+    repository: "LystadJS/method-missing-data"
+    parents: []
+    description: "Methods for inference, sensitivity, and measurement under incomplete or imperfectly observed data."
+  longitudinal-multilevel:
+    label: "Longitudinal and Multilevel Statistics"
+    repository: "LystadJS/method-longitudinal-multilevel"
+    parents: []
+    description: "Methods for repeated observations, nested data, trajectories, and hierarchical dependence."
+  spatial-statistics:
+    label: "Spatial and Geographic Statistics"
+    repository: "LystadJS/method-spatial-statistics"
+    parents: []
+    description: "Methods for spatial dependence, geographic structure, and place-based inference."
+  statistical-computing:
+    label: "Statistical Computing and Visualization"
+    repository: "LystadJS/method-statistical-computing"
+    parents: []
+    description: "Reproducible statistical programming, simulation, computational workflows, and analytical visualization."

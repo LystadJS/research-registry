@@ -1,0 +1,500 @@
+schema_version: '1.0'
+countries:
+  AD:
+    label: Andorra
+  AE:
+    label: United Arab Emirates
+  AF:
+    label: Afghanistan
+  AG:
+    label: Antigua and Barbuda
+  AI:
+    label: Anguilla
+  AL:
+    label: Albania
+  AM:
+    label: Armenia
+  AO:
+    label: Angola
+  AQ:
+    label: Antarctica
+  AR:
+    label: Argentina
+  AS:
+    label: American Samoa
+  AT:
+    label: Austria
+  AU:
+    label: Australia
+  AW:
+    label: Aruba
+  AX:
+    label: Åland Islands
+  AZ:
+    label: Azerbaijan
+  BA:
+    label: Bosnia and Herzegovina
+  BB:
+    label: Barbados
+  BD:
+    label: Bangladesh
+  BE:
+    label: Belgium
+  BF:
+    label: Burkina Faso
+  BG:
+    label: Bulgaria
+  BH:
+    label: Bahrain
+  BI:
+    label: Burundi
+  BJ:
+    label: Benin
+  BL:
+    label: Saint Barthélemy
+  BM:
+    label: Bermuda
+  BN:
+    label: Brunei Darussalam
+  BO:
+    label: Bolivia, Plurinational State of
+  BQ:
+    label: Bonaire, Sint Eustatius and Saba
+  BR:
+    label: Brazil
+  BS:
+    label: Bahamas
+  BT:
+    label: Bhutan
+  BV:
+    label: Bouvet Island
+  BW:
+    label: Botswana
+  BY:
+    label: Belarus
+  BZ:
+    label: Belize
+  CA:
+    label: Canada
+  CC:
+    label: Cocos (Keeling) Islands
+  CD:
+    label: Democratic Republic of the Congo
+  CF:
+    label: Central African Republic
+  CG:
+    label: Congo
+  CH:
+    label: Switzerland
+  CI:
+    label: Côte d'Ivoire
+  CK:
+    label: Cook Islands
+  CL:
+    label: Chile
+  CM:
+    label: Cameroon
+  CN:
+    label: China
+  CO:
+    label: Colombia
+  CR:
+    label: Costa Rica
+  CU:
+    label: Cuba
+  CV:
+    label: Cabo Verde
+  CW:
+    label: Curaçao
+  CX:
+    label: Christmas Island
+  CY:
+    label: Cyprus
+  CZ:
+    label: Czechia
+  DE:
+    label: Germany
+  DJ:
+    label: Djibouti
+  DK:
+    label: Denmark
+  DM:
+    label: Dominica
+  DO:
+    label: Dominican Republic
+  DZ:
+    label: Algeria
+  EC:
+    label: Ecuador
+  EE:
+    label: Estonia
+  EG:
+    label: Egypt
+  EH:
+    label: Western Sahara
+  ER:
+    label: Eritrea
+  ES:
+    label: Spain
+  ET:
+    label: Ethiopia
+  FI:
+    label: Finland
+  FJ:
+    label: Fiji
+  FK:
+    label: Falkland Islands (Malvinas)
+  FM:
+    label: Micronesia, Federated States of
+  FO:
+    label: Faroe Islands
+  FR:
+    label: France
+  GA:
+    label: Gabon
+  GB:
+    label: United Kingdom
+  GD:
+    label: Grenada
+  GE:
+    label: Georgia
+  GF:
+    label: French Guiana
+  GG:
+    label: Guernsey
+  GH:
+    label: Ghana
+  GI:
+    label: Gibraltar
+  GL:
+    label: Greenland
+  GM:
+    label: Gambia
+  GN:
+    label: Guinea
+  GP:
+    label: Guadeloupe
+  GQ:
+    label: Equatorial Guinea
+  GR:
+    label: Greece
+  GS:
+    label: South Georgia and the South Sandwich Islands
+  GT:
+    label: Guatemala
+  GU:
+    label: Guam
+  GW:
+    label: Guinea-Bissau
+  GY:
+    label: Guyana
+  HK:
+    label: Hong Kong
+  HM:
+    label: Heard Island and McDonald Islands
+  HN:
+    label: Honduras
+  HR:
+    label: Croatia
+  HT:
+    label: Haiti
+  HU:
+    label: Hungary
+  ID:
+    label: Indonesia
+  IE:
+    label: Ireland
+  IL:
+    label: Israel
+  IM:
+    label: Isle of Man
+  IN:
+    label: India
+  IO:
+    label: British Indian Ocean Territory
+  IQ:
+    label: Iraq
+  IR:
+    label: Iran, Islamic Republic of
+  IS:
+    label: Iceland
+  IT:
+    label: Italy
+  JE:
+    label: Jersey
+  JM:
+    label: Jamaica
+  JO:
+    label: Jordan
+  JP:
+    label: Japan
+  KE:
+    label: Kenya
+  KG:
+    label: Kyrgyzstan
+  KH:
+    label: Cambodia
+  KI:
+    label: Kiribati
+  KM:
+    label: Comoros
+  KN:
+    label: Saint Kitts and Nevis
+  KP:
+    label: Korea, Democratic People's Republic of
+  KR:
+    label: South Korea
+  KW:
+    label: Kuwait
+  KY:
+    label: Cayman Islands
+  KZ:
+    label: Kazakhstan
+  LA:
+    label: Lao People's Democratic Republic
+  LB:
+    label: Lebanon
+  LC:
+    label: Saint Lucia
+  LI:
+    label: Liechtenstein
+  LK:
+    label: Sri Lanka
+  LR:
+    label: Liberia
+  LS:
+    label: Lesotho
+  LT:
+    label: Lithuania
+  LU:
+    label: Luxembourg
+  LV:
+    label: Latvia
+  LY:
+    label: Libya
+  MA:
+    label: Morocco
+  MC:
+    label: Monaco
+  MD:
+    label: Moldova, Republic of
+  ME:
+    label: Montenegro
+  MF:
+    label: Saint Martin (French part)
+  MG:
+    label: Madagascar
+  MH:
+    label: Marshall Islands
+  MK:
+    label: North Macedonia
+  ML:
+    label: Mali
+  MM:
+    label: Myanmar
+  MN:
+    label: Mongolia
+  MO:
+    label: Macao
+  MP:
+    label: Northern Mariana Islands
+  MQ:
+    label: Martinique
+  MR:
+    label: Mauritania
+  MS:
+    label: Montserrat
+  MT:
+    label: Malta
+  MU:
+    label: Mauritius
+  MV:
+    label: Maldives
+  MW:
+    label: Malawi
+  MX:
+    label: Mexico
+  MY:
+    label: Malaysia
+  MZ:
+    label: Mozambique
+  NA:
+    label: Namibia
+  NC:
+    label: New Caledonia
+  NE:
+    label: Niger
+  NF:
+    label: Norfolk Island
+  NG:
+    label: Nigeria
+  NI:
+    label: Nicaragua
+  NL:
+    label: Netherlands
+  'NO':
+    label: Norway
+  NP:
+    label: Nepal
+  NR:
+    label: Nauru
+  NU:
+    label: Niue
+  NZ:
+    label: New Zealand
+  OM:
+    label: Oman
+  PA:
+    label: Panama
+  PE:
+    label: Peru
+  PF:
+    label: French Polynesia
+  PG:
+    label: Papua New Guinea
+  PH:
+    label: Philippines
+  PK:
+    label: Pakistan
+  PL:
+    label: Poland
+  PM:
+    label: Saint Pierre and Miquelon
+  PN:
+    label: Pitcairn
+  PR:
+    label: Puerto Rico
+  PS:
+    label: Palestine
+  PT:
+    label: Portugal
+  PW:
+    label: Palau
+  PY:
+    label: Paraguay
+  QA:
+    label: Qatar
+  RE:
+    label: Réunion
+  RO:
+    label: Romania
+  RS:
+    label: Serbia
+  RU:
+    label: Russian Federation
+  RW:
+    label: Rwanda
+  SA:
+    label: Saudi Arabia
+  SB:
+    label: Solomon Islands
+  SC:
+    label: Seychelles
+  SD:
+    label: Sudan
+  SE:
+    label: Sweden
+  SG:
+    label: Singapore
+  SH:
+    label: Saint Helena, Ascension and Tristan da Cunha
+  SI:
+    label: Slovenia
+  SJ:
+    label: Svalbard and Jan Mayen
+  SK:
+    label: Slovakia
+  SL:
+    label: Sierra Leone
+  SM:
+    label: San Marino
+  SN:
+    label: Senegal
+  SO:
+    label: Somalia
+  SR:
+    label: Suriname
+  SS:
+    label: South Sudan
+  ST:
+    label: Sao Tome and Principe
+  SV:
+    label: El Salvador
+  SX:
+    label: Sint Maarten (Dutch part)
+  SY:
+    label: Syrian Arab Republic
+  SZ:
+    label: Eswatini
+  TC:
+    label: Turks and Caicos Islands
+  TD:
+    label: Chad
+  TF:
+    label: French Southern Territories
+  TG:
+    label: Togo
+  TH:
+    label: Thailand
+  TJ:
+    label: Tajikistan
+  TK:
+    label: Tokelau
+  TL:
+    label: Timor-Leste
+  TM:
+    label: Turkmenistan
+  TN:
+    label: Tunisia
+  TO:
+    label: Tonga
+  TR:
+    label: Türkiye
+  TT:
+    label: Trinidad and Tobago
+  TV:
+    label: Tuvalu
+  TW:
+    label: Taiwan, Province of China
+  TZ:
+    label: Tanzania, United Republic of
+  UA:
+    label: Ukraine
+  UG:
+    label: Uganda
+  UM:
+    label: United States Minor Outlying Islands
+  US:
+    label: United States
+  UY:
+    label: Uruguay
+  UZ:
+    label: Uzbekistan
+  VA:
+    label: Holy See (Vatican City State)
+  VC:
+    label: Saint Vincent and the Grenadines
+  VE:
+    label: Venezuela, Bolivarian Republic of
+  VG:
+    label: Virgin Islands, British
+  VI:
+    label: Virgin Islands, U.S.
+  VN:
+    label: Viet Nam
+  VU:
+    label: Vanuatu
+  WF:
+    label: Wallis and Futuna
+  WS:
+    label: Samoa
+  YE:
+    label: Yemen
+  YT:
+    label: Mayotte
+  ZA:
+    label: South Africa
+  ZM:
+    label: Zambia
+  ZW:
+    label: Zimbabwe

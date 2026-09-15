@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lystadjs.github.io/schema/domain.schema.json",
+  "title": "JSL Domain Hub Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "domain"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "repository",
+        "status",
+        "summary",
+        "related_domains"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 2
+        },
+        "repository": {
+          "type": "string",
+          "pattern": "^LystadJS/[A-Za-z0-9._-]+$"
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "active",
+            "archived"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 20
+        },
+        "related_domains": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      }
+    }
+  }
+}
