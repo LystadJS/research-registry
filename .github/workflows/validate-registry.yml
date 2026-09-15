@@ -34,6 +34,12 @@ jobs:
       - name: Validate fixture project collection
         run: python scripts/validate_manifest.py --type project --manifest-dir tests/fixtures/projects
 
+      - name: Validate Phase 2 draft projects
+        run: python scripts/validate_manifest.py --type project --manifest-dir phase2/draft-manifests/projects
+
+      - name: Validate Phase 2 draft methods
+        run: python scripts/validate_manifest.py --type method --manifest-dir phase2/draft-manifests/methods
+
       - name: Build acceptance-test registry
         run: python scripts/build_web_registry.py --manifest-dir tests/fixtures/projects --output-dir /tmp/jsl-registry
 
