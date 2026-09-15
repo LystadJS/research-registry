@@ -68,6 +68,7 @@ jobs:
           from pathlib import Path
           registry = json.loads(Path('/tmp/jsl-discovery/dist/research-registry.json').read_text())
           required = {
+              'ai-governance-non-proliferation',
               'islamic-state-ethnosectarian-attack-patterns',
               'un-transcript-voting-alignment',
           }
