@@ -2,118 +2,96 @@
 
 ## Objective
 
-Move the existing GitHub portfolio toward Research Repository Architecture v1.0 without breaking public links, conflating courses with research, or prematurely renaming active software.
+Move the existing GitHub portfolio toward Research Repository Architecture v1.0 without breaking public links, conflating courses with research, exposing private working material, or prematurely renaming active software.
 
 ## Classification summary
 
-| Current repository | v1.0 role | Canonical ID | Proposed eventual name | Action |
+| Current repository | v1.0 role | Canonical ID | Proposed eventual name | Current action |
 |---|---|---|---|---|
-| `AI-Governance-and-Non-Proliferation-Task-Force` | Applied research project | `ai-governance-non-proliferation` | `project-ai-governance-non-proliferation` | Draft manifest first; rename later |
+| `AI-Governance-and-Non-Proliferation-Task-Force` | Applied research project | `ai-governance-non-proliferation` | `project-ai-governance-non-proliferation` | Manifest deployed; remain private; public layer later |
 | `APSTA-GE-2012-Causal-Inference` | Course | `apsta-ge-2012-causal-inference` | `course-apsta-ge-2012-causal-inference` | Preserve for now |
 | `APSTA-GE-2042-Multilevel-Modeling-Nested-and-Longitudinal-Data` | Course | `apsta-ge-2042-multilevel-modeling` | `course-apsta-ge-2042-multilevel-modeling` | Preserve for now |
-| `counterterrorism_ethnosectarian_islamic_state` | Academic research project | `islamic-state-ethnosectarian-attack-patterns` | `project-islamic-state-ethnosectarian-attack-patterns` | Draft manifest first; rename later |
-| `draftmapR` | Software / R package | `longitudinal-embedding-alignment` | **deferred** | Freeze package name before rename |
+| `counterterrorism_ethnosectarian_islamic_state` | Academic research project | `islamic-state-ethnosectarian-attack-patterns` | `project-islamic-state-ethnosectarian-attack-patterns` | Manifest deployed; broad workspace approved |
+| `draftmapR` | Software / R package | `longitudinal-embedding-alignment` | **deferred** | Leave untouched until package name freezes |
 | `LystadJS` | GitHub profile infrastructure | `github-profile` | unchanged | Never rename |
 | `LystadJS.github.io` | Portfolio infrastructure | `portfolio-website` | unchanged | Never rename |
 | `research-registry` | Registry infrastructure | `research-registry` | unchanged | Already canonical |
-| `UN-Transcript-Intelligence-Dynamic-Voting-Alignment` | Technical project | `un-transcript-voting-alignment` | `project-un-transcript-voting-alignment` | Draft manifest first; rename later |
-| `Unsupervised-Machine-Learning` | Method hub | `unsupervised-learning` | `method-unsupervised-learning` | Highest-priority hub migration |
+| `UN-Transcript-Intelligence-Dynamic-Voting-Alignment` | Technical project | `un-transcript-voting-alignment` | `project-un-transcript-voting-alignment` | Manifest deployed; split reusable engine later |
+| `Unsupervised-Machine-Learning` | Method hub | `unsupervised-learning` | `method-unsupervised-learning` | Manifest deployed; live transitional hub |
 
 ## P2-A — Inventory and classification
 
-Completed against all 10 owner repositories exposed by the connected GitHub installation.
-
-### High-confidence classifications
-
-- `Unsupervised-Machine-Learning` is already functioning as a method/reference hub.
-- `counterterrorism_ethnosectarian_islamic_state` is an academic research project repository.
-- `UN-Transcript-Intelligence-Dynamic-Voting-Alignment` is a technical project shell.
-- `draftmapR` is software/package development, not a substantive research project.
-- the APSTA repositories are courses, not method hubs or research projects.
-- `LystadJS`, `LystadJS.github.io`, and `research-registry` are infrastructure/presentation repositories.
+**Complete.** All 10 owner repositories exposed by the connected GitHub installation are classified.
 
 ## P2-B — Draft manifests
 
-Schema-valid drafts are stored under `phase2/draft-manifests/`. They use **current repository names**, not proposed rename targets, so they can later be installed without creating a false repository reference.
+**Complete.** Schema-valid drafts remain under `phase2/draft-manifests/` as migration records.
 
-The drafts are intentionally conservative. For example, the AI-governance manifest records the PCoA/dimension-reduction and visualization work that is actually present in the current repository rather than claiming every method used in the broader research program.
+## P2-C — Naming and architecture review
 
-## P2-C — Naming review
+**Complete with one explicit deferral.** Approved decisions:
 
-Before any rename, resolve these decisions:
-
-1. **Software name:** freeze the final package name for the current `draftmapR` repository. The repository should ultimately use the package name.
-2. **Counterterrorism project scope:** confirm whether the current repository should remain a broad Islamic State ethnosectarian attack-patterns workspace or be narrowed to a single publication-specific repository.
-3. **UN transcript project scope:** confirm whether transcript collection and dynamic voting alignment remain one project repository or should later split into reusable infrastructure plus an empirical project.
-4. **AI governance visibility:** decide whether the current private repository remains private, becomes a releasable public project, or is split into public/private layers.
+1. `draftmapR`: no rename or source-manifest deployment until the final package name is frozen.
+2. Counterterrorism: retain the broad Islamic State / ethnosectarian attack-patterns research workspace.
+3. UN transcript: retain the current combined repository during migration, then eventually split reusable transcript/evidence infrastructure from the voting-alignment empirical project.
+4. AI governance: retain the private working repository and later create a sanitized public project/reproducibility layer.
 
 ## P2-D — Non-destructive manifest deployment
 
-After the naming review, add metadata without renaming repositories:
-
-```text
-<repository>/.research/project.yml
-```
-
-or, for the existing method hub:
+**Complete for approved repositories.** Metadata was added without renaming or restructuring repositories:
 
 ```text
 Unsupervised-Machine-Learning/.research/method.yml
+counterterrorism_ethnosectarian_islamic_state/.research/project.yml
+UN-Transcript-Intelligence-Dynamic-Voting-Alignment/.research/project.yml
+AI-Governance-and-Non-Proliferation-Task-Force/.research/project.yml
 ```
 
-Deployment order:
-
-1. `Unsupervised-Machine-Learning`
-2. `counterterrorism_ethnosectarian_islamic_state`
-3. `UN-Transcript-Intelligence-Dynamic-Voting-Alignment`
-4. `AI-Governance-and-Non-Proliferation-Task-Force`
-5. `draftmapR` only after package naming is frozen
-
-Each deployment must pass the registry validator before commit.
+`draftmapR` remains intentionally untouched.
 
 ## P2-E — Rename and link migration
 
-Repository renames are separate from manifest deployment.
+**Pending.** Repository renames remain separate from metadata deployment.
 
-### Rename candidates with known inbound links
+### Known coordinated-link repositories
 
-The website currently hard-codes links to:
+The website and/or profile currently hard-code links to:
 
 - `Unsupervised-Machine-Learning`
 - `counterterrorism_ethnosectarian_islamic_state`
 - `UN-Transcript-Intelligence-Dynamic-Voting-Alignment`
 
-The GitHub profile README also links to these repositories. Therefore, their rename operation must be coordinated with updates to the website, profile README, and the current empirical-tag resolver.
+Any rename must update the portfolio website, GitHub profile README, and empirical-tag resolver in the same migration window. GitHub redirects are a safety net, not the canonical architecture.
 
-Even though GitHub generally redirects an old repository URL after rename, the portfolio should not rely on redirects as its canonical link architecture.
+### AI governance
 
-### Rename candidates without discovered public inbound links
+The private working repository should not simply be made public. A sanitized public project layer should be created first; its eventual canonical name can then be used for public graph discovery.
 
-- `AI-Governance-and-Non-Proliferation-Task-Force`
-- `draftmapR`
+### Software
 
-The AI repository is private and the package repository is private, reducing immediate public-link risk. They still require scope/name review before rename.
+`draftmapR` remains excluded from P2-E until package naming is frozen.
 
 ## P2-F — Discovery audit
 
-After manifests are deployed but before mass rename:
+**Complete.** See [`DISCOVERY_AUDIT.md`](DISCOVERY_AUDIT.md).
 
-1. run `discover_projects.py` against the owner account;
-2. verify project IDs are unique;
-3. verify the method hub resolves correctly;
-4. generate a candidate `research-registry.json` and `research-graph.json`;
-5. compare generated project/domain/method relationships against the migration plan;
-6. only then begin coordinated renames.
+Acceptance results:
+
+- public project IDs are unique;
+- all deployed project IDs are unique;
+- the existing method hub validates and now resolves through its current live repository URL;
+- candidate public and all-deployed research graphs build successfully;
+- expected project/domain/method relationships match the migration plan.
 
 ## Repositories intentionally excluded from the project graph
 
 ### Course repositories
 
-The two APSTA repositories remain educational/course artifacts. They may be standardized later, but they should not appear as substantive research projects solely because they contain statistical methods.
+The APSTA repositories remain educational/course artifacts and should not appear as substantive research projects solely because they contain statistical methods.
 
 ### Profile and portfolio repositories
 
-`LystadJS` and `LystadJS.github.io` are navigation/presentation layers. Their job is to expose the research graph, not become nodes in it.
+`LystadJS` and `LystadJS.github.io` remain navigation/presentation layers rather than research graph nodes.
 
 ### Registry infrastructure
 
@@ -121,6 +99,6 @@ The two APSTA repositories remain educational/course artifacts. They may be stan
 
 ## Missing hubs
 
-Only one of the eight approved method hubs currently exists in repository form (`Unsupervised-Machine-Learning`). None of the six approved domain hubs currently exist as dedicated repositories.
+The existing `Unsupervised-Machine-Learning` repository is now the validated transitional `unsupervised-learning` hub. The other seven approved method hubs and all six domain hubs do not yet exist as repositories.
 
-Their creation should occur only after the first existing repositories are successfully discovered from manifests. This prevents building empty hub repositories before the registry is proven against real projects.
+P2-F has now satisfied the prerequisite for creating those hubs. Hub creation may proceed before or independently of repository renaming because canonical IDs do not depend on repository names.
