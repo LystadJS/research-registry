@@ -1,0 +1,90 @@
+name: Phase 2 Public Discovery Audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/phase2-discovery-audit.yml"
+      - "scripts/discover_projects.py"
+      - "scripts/build_web_registry.py"
+      - "scripts/build_research_graph.py"
+      - "scripts/validate_manifest.py"
+      - "taxonomy/**"
+      - "schema/**"
+  schedule:
+    - cron: "47 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out registry
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Discover public project manifests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover_projects.py --owner LystadJS --output-dir /tmp/jsl-discovery/manifests
+
+      - name: Validate discovered public projects
+        run: python scripts/validate_manifest.py --type project --manifest-dir /tmp/jsl-discovery/manifests
+
+      - name: Fetch live unsupervised-learning method manifest
+        run: |
+          mkdir -p /tmp/jsl-discovery/method
+          curl -fsSL https://raw.githubusercontent.com/LystadJS/Unsupervised-Machine-Learning/main/.research/method.yml \
+            -o /tmp/jsl-discovery/method/method.yml
+
+      - name: Validate live method hub
+        run: >-
+          python scripts/validate_manifest.py
+          --type method
+          --file /tmp/jsl-discovery/method/method.yml
+          --repository-name LystadJS/Unsupervised-Machine-Learning
+
+      - name: Build candidate public registry
+        run: python scripts/build_web_registry.py --manifest-dir /tmp/jsl-discovery/manifests --output-dir /tmp/jsl-discovery/dist
+
+      - name: Build candidate public graph
+        run: python scripts/build_research_graph.py --manifest-dir /tmp/jsl-discovery/manifests --output /tmp/jsl-discovery/dist/research-graph.json
+
+      - name: Assert Phase 2 baseline entities
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          registry = json.loads(Path('/tmp/jsl-discovery/dist/research-registry.json').read_text())
+          required = {
+              'islamic-state-ethnosectarian-attack-patterns',
+              'un-transcript-voting-alignment',
+          }
+          found = set(registry['projects'])
+          missing = required - found
+          if missing:
+              raise SystemExit(f'Missing required public Phase 2 project IDs: {sorted(missing)}')
+          method = registry['methods']['unsupervised-learning']
+          expected = 'https://github.com/LystadJS/Unsupervised-Machine-Learning'
+          if method['url'] != expected:
+              raise SystemExit(f'Unexpected unsupervised-learning hub URL: {method["url"]!r}')
+          print(f'Public discovery PASS: {len(found)} project manifest(s); baseline IDs present.')
+          PY
+
+      - name: Upload discovery audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase2-public-discovery-audit
+          path: /tmp/jsl-discovery/dist
+          if-no-files-found: error
