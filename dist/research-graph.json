@@ -67,6 +67,228 @@
       "label": "United Nations"
     },
     {
+      "id": "country:AT",
+      "type": "country",
+      "label": "Austria",
+      "code": "AT"
+    },
+    {
+      "id": "country:BE",
+      "type": "country",
+      "label": "Belgium",
+      "code": "BE"
+    },
+    {
+      "id": "country:BR",
+      "type": "country",
+      "label": "Brazil",
+      "code": "BR"
+    },
+    {
+      "id": "country:BG",
+      "type": "country",
+      "label": "Bulgaria",
+      "code": "BG"
+    },
+    {
+      "id": "country:CN",
+      "type": "country",
+      "label": "China",
+      "code": "CN"
+    },
+    {
+      "id": "country:HR",
+      "type": "country",
+      "label": "Croatia",
+      "code": "HR"
+    },
+    {
+      "id": "country:CY",
+      "type": "country",
+      "label": "Cyprus",
+      "code": "CY"
+    },
+    {
+      "id": "country:CZ",
+      "type": "country",
+      "label": "Czechia",
+      "code": "CZ"
+    },
+    {
+      "id": "country:DK",
+      "type": "country",
+      "label": "Denmark",
+      "code": "DK"
+    },
+    {
+      "id": "country:EE",
+      "type": "country",
+      "label": "Estonia",
+      "code": "EE"
+    },
+    {
+      "id": "country:FI",
+      "type": "country",
+      "label": "Finland",
+      "code": "FI"
+    },
+    {
+      "id": "country:FR",
+      "type": "country",
+      "label": "France",
+      "code": "FR"
+    },
+    {
+      "id": "country:DE",
+      "type": "country",
+      "label": "Germany",
+      "code": "DE"
+    },
+    {
+      "id": "country:GR",
+      "type": "country",
+      "label": "Greece",
+      "code": "GR"
+    },
+    {
+      "id": "country:HU",
+      "type": "country",
+      "label": "Hungary",
+      "code": "HU"
+    },
+    {
+      "id": "country:IN",
+      "type": "country",
+      "label": "India",
+      "code": "IN"
+    },
+    {
+      "id": "country:IQ",
+      "type": "country",
+      "label": "Iraq",
+      "code": "IQ"
+    },
+    {
+      "id": "country:IE",
+      "type": "country",
+      "label": "Ireland",
+      "code": "IE"
+    },
+    {
+      "id": "country:IL",
+      "type": "country",
+      "label": "Israel",
+      "code": "IL"
+    },
+    {
+      "id": "country:IT",
+      "type": "country",
+      "label": "Italy",
+      "code": "IT"
+    },
+    {
+      "id": "country:JP",
+      "type": "country",
+      "label": "Japan",
+      "code": "JP"
+    },
+    {
+      "id": "country:LV",
+      "type": "country",
+      "label": "Latvia",
+      "code": "LV"
+    },
+    {
+      "id": "country:LT",
+      "type": "country",
+      "label": "Lithuania",
+      "code": "LT"
+    },
+    {
+      "id": "country:LU",
+      "type": "country",
+      "label": "Luxembourg",
+      "code": "LU"
+    },
+    {
+      "id": "country:MT",
+      "type": "country",
+      "label": "Malta",
+      "code": "MT"
+    },
+    {
+      "id": "country:NL",
+      "type": "country",
+      "label": "Netherlands",
+      "code": "NL"
+    },
+    {
+      "id": "country:PL",
+      "type": "country",
+      "label": "Poland",
+      "code": "PL"
+    },
+    {
+      "id": "country:PT",
+      "type": "country",
+      "label": "Portugal",
+      "code": "PT"
+    },
+    {
+      "id": "country:RO",
+      "type": "country",
+      "label": "Romania",
+      "code": "RO"
+    },
+    {
+      "id": "country:SA",
+      "type": "country",
+      "label": "Saudi Arabia",
+      "code": "SA"
+    },
+    {
+      "id": "country:SK",
+      "type": "country",
+      "label": "Slovakia",
+      "code": "SK"
+    },
+    {
+      "id": "country:SI",
+      "type": "country",
+      "label": "Slovenia",
+      "code": "SI"
+    },
+    {
+      "id": "country:KR",
+      "type": "country",
+      "label": "South Korea",
+      "code": "KR"
+    },
+    {
+      "id": "country:ES",
+      "type": "country",
+      "label": "Spain",
+      "code": "ES"
+    },
+    {
+      "id": "country:SE",
+      "type": "country",
+      "label": "Sweden",
+      "code": "SE"
+    },
+    {
+      "id": "country:AE",
+      "type": "country",
+      "label": "United Arab Emirates",
+      "code": "AE"
+    },
+    {
+      "id": "country:US",
+      "type": "country",
+      "label": "United States",
+      "code": "US"
+    },
+    {
       "id": "domain:anthropocene-human-ecology",
       "type": "domain",
       "label": "Anthropocene Dynamics and Human Ecology"
@@ -135,6 +357,32 @@
       "id": "method:unsupervised-learning",
       "type": "method",
       "label": "Unsupervised Learning"
+    },
+    {
+      "id": "project:ai-governance-non-proliferation",
+      "type": "project",
+      "label": "Artificial Intelligence Governance and Non-Proliferation",
+      "url": "https://github.com/LystadJS/project-ai-governance-non-proliferation",
+      "status": "active"
+    },
+    {
+      "id": "project:islamic-state-ethnosectarian-attack-patterns",
+      "type": "project",
+      "label": "Counterterrorism, Ethnosectarian Context and Islamic State Attack Patterns",
+      "url": "https://github.com/LystadJS/counterterrorism_ethnosectarian_islamic_state",
+      "status": "active"
+    },
+    {
+      "id": "project:un-transcript-voting-alignment",
+      "type": "project",
+      "label": "UN Transcript Intelligence and Dynamic Voting Alignment",
+      "url": "https://github.com/LystadJS/UN-Transcript-Intelligence-Dynamic-Voting-Alignment",
+      "status": "active"
+    },
+    {
+      "id": "software:r",
+      "type": "software",
+      "label": "R"
     },
     {
       "id": "technique:bootstrap",
@@ -537,6 +785,384 @@
       "source": "method:unsupervised-learning",
       "target": "technique:umap",
       "type": "PARENT_OF"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:AE",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:AT",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:BE",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:BG",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:BR",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:CN",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:CY",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:CZ",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:DE",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:DK",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:EE",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:ES",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:FI",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:FR",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:GR",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:HR",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:HU",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:IE",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:IL",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:IN",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:IT",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:JP",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:KR",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:LT",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:LU",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:LV",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:MT",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:NL",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:PL",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:PT",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:RO",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:SA",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:SE",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:SI",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:SK",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "country:US",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "context:applied-analysis",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "context:multilateral-policy",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "context:united-nations",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "domain:emerging-technology",
+      "type": "STUDIES_DOMAIN"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "domain:human-security",
+      "type": "STUDIES_DOMAIN"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "method:dimension-reduction",
+      "type": "USES_METHOD",
+      "role": "primary"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "method:statistical-computing",
+      "type": "USES_METHOD",
+      "role": "secondary"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "software:r",
+      "type": "USES_SOFTWARE"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "technique:data-visualization",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "technique:multidimensional-scaling",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:ai-governance-non-proliferation",
+      "target": "technique:reproducible-computing",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "country:IQ",
+      "type": "APPLIES_TO_COUNTRY"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "context:academic-research",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "context:open-source-intelligence",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "domain:human-security",
+      "type": "STUDIES_DOMAIN"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "domain:political-violence",
+      "type": "STUDIES_DOMAIN"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "domain:terrorism-counterterrorism",
+      "type": "STUDIES_DOMAIN"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "method:missing-data",
+      "type": "USES_METHOD",
+      "role": "secondary"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "method:spatial-statistics",
+      "type": "USES_METHOD",
+      "role": "primary"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "method:statistical-computing",
+      "type": "USES_METHOD",
+      "role": "secondary"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "software:r",
+      "type": "USES_SOFTWARE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "technique:data-visualization",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "technique:missingness-diagnostics",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "technique:population-weighted-geography",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "technique:reproducible-computing",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "technique:spatial-analysis",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "technique:spatial-visualization",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:islamic-state-ethnosectarian-attack-patterns",
+      "target": "technique:statistical-modeling",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "context:applied-analysis",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "context:multilateral-policy",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "context:open-source-intelligence",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "context:united-nations",
+      "type": "OCCURS_IN"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "method:longitudinal-multilevel",
+      "type": "USES_METHOD",
+      "role": "secondary"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "method:network-analysis",
+      "type": "USES_METHOD",
+      "role": "secondary"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "method:statistical-computing",
+      "type": "USES_METHOD",
+      "role": "primary"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "technique:dynamic-networks",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "technique:longitudinal-analysis",
+      "type": "USES_TECHNIQUE"
+    },
+    {
+      "source": "project:un-transcript-voting-alignment",
+      "target": "technique:reproducible-computing",
+      "type": "USES_TECHNIQUE"
     }
   ]
 }

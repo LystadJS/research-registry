@@ -1,1 +1,631 @@
-{"schema_version":"1.0","methods":{"unsupervised-learning":{"id":"unsupervised-learning","label":"Unsupervised Learning","repository":"LystadJS/Unsupervised-Machine-Learning","url":"https://github.com/LystadJS/Unsupervised-Machine-Learning","description":"Methods for learning structure, similarity, latent organization, and representation from unlabeled data.","parents":[]},"clustering":{"id":"clustering","label":"Cluster Analysis","repository":"LystadJS/method-clustering","url":"https://github.com/LystadJS/method-clustering","description":"Methods for identifying groups, latent structure, and heterogeneous subpopulations.","parents":["unsupervised-learning"]},"dimension-reduction":{"id":"dimension-reduction","label":"Dimension Reduction","repository":"LystadJS/method-dimension-reduction","url":"https://github.com/LystadJS/method-dimension-reduction","description":"Methods for representing high-dimensional structure in lower-dimensional spaces.","parents":["unsupervised-learning"]},"network-analysis":{"id":"network-analysis","label":"Network Analysis","repository":"LystadJS/method-network-analysis","url":"https://github.com/LystadJS/method-network-analysis","description":"Statistical and computational analysis of relational structure, communities, diffusion, and network dynamics.","parents":[]},"missing-data":{"id":"missing-data","label":"Missing Data and Measurement","repository":"LystadJS/method-missing-data","url":"https://github.com/LystadJS/method-missing-data","description":"Methods for inference, sensitivity, and measurement under incomplete or imperfectly observed data.","parents":[]},"longitudinal-multilevel":{"id":"longitudinal-multilevel","label":"Longitudinal and Multilevel Statistics","repository":"LystadJS/method-longitudinal-multilevel","url":"https://github.com/LystadJS/method-longitudinal-multilevel","description":"Methods for repeated observations, nested data, trajectories, and hierarchical dependence.","parents":[]},"spatial-statistics":{"id":"spatial-statistics","label":"Spatial and Geographic Statistics","repository":"LystadJS/method-spatial-statistics","url":"https://github.com/LystadJS/method-spatial-statistics","description":"Methods for spatial dependence, geographic structure, and place-based inference.","parents":[]},"statistical-computing":{"id":"statistical-computing","label":"Statistical Computing and Visualization","repository":"LystadJS/method-statistical-computing","url":"https://github.com/LystadJS/method-statistical-computing","description":"Reproducible statistical programming, simulation, computational workflows, and analytical visualization.","parents":[]}},"domains":{"political-violence":{"id":"political-violence","label":"Political Violence","repository":"LystadJS/domain-political-violence","url":"https://github.com/LystadJS/domain-political-violence","description":"Empirical study of organized violence, conflict behavior, civilian targeting, and violent political systems.","parents":[]},"terrorism-counterterrorism":{"id":"terrorism-counterterrorism","label":"Terrorism and Responses to Terrorism","repository":"LystadJS/domain-terrorism-counterterrorism","url":"https://github.com/LystadJS/domain-terrorism-counterterrorism","description":"Research on terrorist organizations, violent extremist behavior, and responses to terrorism.","parents":[]},"humanitarian-response":{"id":"humanitarian-response","label":"Humanitarian Response","repository":"LystadJS/domain-humanitarian-response","url":"https://github.com/LystadJS/domain-humanitarian-response","description":"Research on humanitarian access, response effectiveness, protection, and crisis operations.","parents":[]},"human-security":{"id":"human-security","label":"Human Security","repository":"LystadJS/domain-human-security","url":"https://github.com/LystadJS/domain-human-security","description":"Research on threats to human life, safety, welfare, and resilience across borders and institutions.","parents":[]},"emerging-technology":{"id":"emerging-technology","label":"Emerging Technology","repository":"LystadJS/domain-emerging-technology","url":"https://github.com/LystadJS/domain-emerging-technology","description":"Research on the governance, diffusion, risks, and security implications of emerging technologies.","parents":[]},"anthropocene-human-ecology":{"id":"anthropocene-human-ecology","label":"Anthropocene Dynamics and Human Ecology","repository":"LystadJS/domain-anthropocene-human-ecology","url":"https://github.com/LystadJS/domain-anthropocene-human-ecology","description":"Research on interactions among environmental change, human systems, resource stress, and security.","parents":[]}},"contexts":{"academic-research":{"label":"Academic Research"},"applied-analysis":{"label":"Applied Analysis"},"united-nations":{"label":"United Nations"},"multilateral-policy":{"label":"Multilateral Policy"},"humanitarian-operations":{"label":"Humanitarian Operations"},"senior-decision-support":{"label":"Senior Decision Support"},"military-service":{"label":"Military Service"},"multinational-security-cooperation":{"label":"Multinational Security Cooperation"},"independent-reporting":{"label":"Independent Reporting"},"foreign-correspondence":{"label":"Foreign Correspondence"},"investigative-journalism":{"label":"Investigative Journalism"},"open-source-intelligence":{"label":"Open-Source Intelligence"},"operational-analysis":{"label":"Operational Analysis"}},"techniques":{"k-means":{"label":"K-Means","methods":["clustering"]},"hierarchical-clustering":{"label":"Hierarchical Clustering","methods":["clustering"]},"dbscan":{"label":"DBSCAN","methods":["clustering"]},"hdbscan":{"label":"HDBSCAN","methods":["clustering"]},"fuzzy-clustering":{"label":"Fuzzy Clustering","methods":["clustering"]},"mixture-models":{"label":"Mixture Models","methods":["clustering","unsupervised-learning"]},"expectation-maximization":{"label":"Expectation-Maximization","methods":["clustering","unsupervised-learning"]},"cluster-validation":{"label":"Cluster Validation","methods":["clustering"]},"pca":{"label":"Principal Component Analysis","methods":["dimension-reduction","unsupervised-learning"]},"umap":{"label":"UMAP","methods":["dimension-reduction","unsupervised-learning"]},"multidimensional-scaling":{"label":"Multidimensional Scaling","methods":["dimension-reduction","unsupervised-learning"]},"tsne":{"label":"t-SNE","methods":["dimension-reduction","unsupervised-learning"]},"procrustes-alignment":{"label":"Procrustes Alignment","methods":["dimension-reduction","statistical-computing"]},"community-detection":{"label":"Community Detection","methods":["network-analysis","unsupervised-learning"]},"centrality":{"label":"Centrality Analysis","methods":["network-analysis"]},"network-construction":{"label":"Network Construction","methods":["network-analysis"]},"diffusion-analysis":{"label":"Diffusion Analysis","methods":["network-analysis","longitudinal-multilevel"]},"dynamic-networks":{"label":"Dynamic Networks","methods":["network-analysis","longitudinal-multilevel"]},"multiple-imputation":{"label":"Multiple Imputation","methods":["missing-data"]},"mice":{"label":"Multiple Imputation by Chained Equations","methods":["missing-data"]},"missingness-diagnostics":{"label":"Missingness Diagnostics","methods":["missing-data"]},"sensitivity-analysis":{"label":"Sensitivity Analysis","methods":["missing-data","statistical-computing"]},"multilevel-modeling":{"label":"Multilevel Modeling","methods":["longitudinal-multilevel"]},"longitudinal-analysis":{"label":"Longitudinal Analysis","methods":["longitudinal-multilevel"]},"mixed-effects-modeling":{"label":"Mixed-Effects Modeling","methods":["longitudinal-multilevel"]},"spatial-analysis":{"label":"Spatial Analysis","methods":["spatial-statistics"]},"population-weighted-geography":{"label":"Population-Weighted Geography","methods":["spatial-statistics"]},"spatial-visualization":{"label":"Spatial Visualization","methods":["spatial-statistics","statistical-computing"]},"statistical-modeling":{"label":"Statistical Modeling","methods":["statistical-computing"]},"simulation":{"label":"Simulation","methods":["statistical-computing"]},"bootstrap":{"label":"Bootstrap","methods":["statistical-computing"]},"data-visualization":{"label":"Data Visualization","methods":["statistical-computing"]},"reproducible-computing":{"label":"Reproducible Computing","methods":["statistical-computing"]}},"projects":{}}
+{
+  "schema_version": "1.0",
+  "methods": {
+    "unsupervised-learning": {
+      "id": "unsupervised-learning",
+      "label": "Unsupervised Learning",
+      "repository": "LystadJS/Unsupervised-Machine-Learning",
+      "url": "https://github.com/LystadJS/Unsupervised-Machine-Learning",
+      "description": "Methods for learning structure, similarity, latent organization, and representation from unlabeled data.",
+      "parents": []
+    },
+    "clustering": {
+      "id": "clustering",
+      "label": "Cluster Analysis",
+      "repository": "LystadJS/method-clustering",
+      "url": "https://github.com/LystadJS/method-clustering",
+      "description": "Methods for identifying groups, latent structure, and heterogeneous subpopulations.",
+      "parents": [
+        "unsupervised-learning"
+      ]
+    },
+    "dimension-reduction": {
+      "id": "dimension-reduction",
+      "label": "Dimension Reduction",
+      "repository": "LystadJS/method-dimension-reduction",
+      "url": "https://github.com/LystadJS/method-dimension-reduction",
+      "description": "Methods for representing high-dimensional structure in lower-dimensional spaces.",
+      "parents": [
+        "unsupervised-learning"
+      ]
+    },
+    "network-analysis": {
+      "id": "network-analysis",
+      "label": "Network Analysis",
+      "repository": "LystadJS/method-network-analysis",
+      "url": "https://github.com/LystadJS/method-network-analysis",
+      "description": "Statistical and computational analysis of relational structure, communities, diffusion, and network dynamics.",
+      "parents": []
+    },
+    "missing-data": {
+      "id": "missing-data",
+      "label": "Missing Data and Measurement",
+      "repository": "LystadJS/method-missing-data",
+      "url": "https://github.com/LystadJS/method-missing-data",
+      "description": "Methods for inference, sensitivity, and measurement under incomplete or imperfectly observed data.",
+      "parents": []
+    },
+    "longitudinal-multilevel": {
+      "id": "longitudinal-multilevel",
+      "label": "Longitudinal and Multilevel Statistics",
+      "repository": "LystadJS/method-longitudinal-multilevel",
+      "url": "https://github.com/LystadJS/method-longitudinal-multilevel",
+      "description": "Methods for repeated observations, nested data, trajectories, and hierarchical dependence.",
+      "parents": []
+    },
+    "spatial-statistics": {
+      "id": "spatial-statistics",
+      "label": "Spatial and Geographic Statistics",
+      "repository": "LystadJS/method-spatial-statistics",
+      "url": "https://github.com/LystadJS/method-spatial-statistics",
+      "description": "Methods for spatial dependence, geographic structure, and place-based inference.",
+      "parents": []
+    },
+    "statistical-computing": {
+      "id": "statistical-computing",
+      "label": "Statistical Computing and Visualization",
+      "repository": "LystadJS/method-statistical-computing",
+      "url": "https://github.com/LystadJS/method-statistical-computing",
+      "description": "Reproducible statistical programming, simulation, computational workflows, and analytical visualization.",
+      "parents": []
+    }
+  },
+  "domains": {
+    "political-violence": {
+      "id": "political-violence",
+      "label": "Political Violence",
+      "repository": "LystadJS/domain-political-violence",
+      "url": "https://github.com/LystadJS/domain-political-violence",
+      "description": "Empirical study of organized violence, conflict behavior, civilian targeting, and violent political systems.",
+      "parents": []
+    },
+    "terrorism-counterterrorism": {
+      "id": "terrorism-counterterrorism",
+      "label": "Terrorism and Responses to Terrorism",
+      "repository": "LystadJS/domain-terrorism-counterterrorism",
+      "url": "https://github.com/LystadJS/domain-terrorism-counterterrorism",
+      "description": "Research on terrorist organizations, violent extremist behavior, and responses to terrorism.",
+      "parents": []
+    },
+    "humanitarian-response": {
+      "id": "humanitarian-response",
+      "label": "Humanitarian Response",
+      "repository": "LystadJS/domain-humanitarian-response",
+      "url": "https://github.com/LystadJS/domain-humanitarian-response",
+      "description": "Research on humanitarian access, response effectiveness, protection, and crisis operations.",
+      "parents": []
+    },
+    "human-security": {
+      "id": "human-security",
+      "label": "Human Security",
+      "repository": "LystadJS/domain-human-security",
+      "url": "https://github.com/LystadJS/domain-human-security",
+      "description": "Research on threats to human life, safety, welfare, and resilience across borders and institutions.",
+      "parents": []
+    },
+    "emerging-technology": {
+      "id": "emerging-technology",
+      "label": "Emerging Technology",
+      "repository": "LystadJS/domain-emerging-technology",
+      "url": "https://github.com/LystadJS/domain-emerging-technology",
+      "description": "Research on the governance, diffusion, risks, and security implications of emerging technologies.",
+      "parents": []
+    },
+    "anthropocene-human-ecology": {
+      "id": "anthropocene-human-ecology",
+      "label": "Anthropocene Dynamics and Human Ecology",
+      "repository": "LystadJS/domain-anthropocene-human-ecology",
+      "url": "https://github.com/LystadJS/domain-anthropocene-human-ecology",
+      "description": "Research on interactions among environmental change, human systems, resource stress, and security.",
+      "parents": []
+    }
+  },
+  "contexts": {
+    "academic-research": {
+      "label": "Academic Research"
+    },
+    "applied-analysis": {
+      "label": "Applied Analysis"
+    },
+    "united-nations": {
+      "label": "United Nations"
+    },
+    "multilateral-policy": {
+      "label": "Multilateral Policy"
+    },
+    "humanitarian-operations": {
+      "label": "Humanitarian Operations"
+    },
+    "senior-decision-support": {
+      "label": "Senior Decision Support"
+    },
+    "military-service": {
+      "label": "Military Service"
+    },
+    "multinational-security-cooperation": {
+      "label": "Multinational Security Cooperation"
+    },
+    "independent-reporting": {
+      "label": "Independent Reporting"
+    },
+    "foreign-correspondence": {
+      "label": "Foreign Correspondence"
+    },
+    "investigative-journalism": {
+      "label": "Investigative Journalism"
+    },
+    "open-source-intelligence": {
+      "label": "Open-Source Intelligence"
+    },
+    "operational-analysis": {
+      "label": "Operational Analysis"
+    }
+  },
+  "techniques": {
+    "k-means": {
+      "label": "K-Means",
+      "methods": [
+        "clustering"
+      ]
+    },
+    "hierarchical-clustering": {
+      "label": "Hierarchical Clustering",
+      "methods": [
+        "clustering"
+      ]
+    },
+    "dbscan": {
+      "label": "DBSCAN",
+      "methods": [
+        "clustering"
+      ]
+    },
+    "hdbscan": {
+      "label": "HDBSCAN",
+      "methods": [
+        "clustering"
+      ]
+    },
+    "fuzzy-clustering": {
+      "label": "Fuzzy Clustering",
+      "methods": [
+        "clustering"
+      ]
+    },
+    "mixture-models": {
+      "label": "Mixture Models",
+      "methods": [
+        "clustering",
+        "unsupervised-learning"
+      ]
+    },
+    "expectation-maximization": {
+      "label": "Expectation-Maximization",
+      "methods": [
+        "clustering",
+        "unsupervised-learning"
+      ]
+    },
+    "cluster-validation": {
+      "label": "Cluster Validation",
+      "methods": [
+        "clustering"
+      ]
+    },
+    "pca": {
+      "label": "Principal Component Analysis",
+      "methods": [
+        "dimension-reduction",
+        "unsupervised-learning"
+      ]
+    },
+    "umap": {
+      "label": "UMAP",
+      "methods": [
+        "dimension-reduction",
+        "unsupervised-learning"
+      ]
+    },
+    "multidimensional-scaling": {
+      "label": "Multidimensional Scaling",
+      "methods": [
+        "dimension-reduction",
+        "unsupervised-learning"
+      ]
+    },
+    "tsne": {
+      "label": "t-SNE",
+      "methods": [
+        "dimension-reduction",
+        "unsupervised-learning"
+      ]
+    },
+    "procrustes-alignment": {
+      "label": "Procrustes Alignment",
+      "methods": [
+        "dimension-reduction",
+        "statistical-computing"
+      ]
+    },
+    "community-detection": {
+      "label": "Community Detection",
+      "methods": [
+        "network-analysis",
+        "unsupervised-learning"
+      ]
+    },
+    "centrality": {
+      "label": "Centrality Analysis",
+      "methods": [
+        "network-analysis"
+      ]
+    },
+    "network-construction": {
+      "label": "Network Construction",
+      "methods": [
+        "network-analysis"
+      ]
+    },
+    "diffusion-analysis": {
+      "label": "Diffusion Analysis",
+      "methods": [
+        "network-analysis",
+        "longitudinal-multilevel"
+      ]
+    },
+    "dynamic-networks": {
+      "label": "Dynamic Networks",
+      "methods": [
+        "network-analysis",
+        "longitudinal-multilevel"
+      ]
+    },
+    "multiple-imputation": {
+      "label": "Multiple Imputation",
+      "methods": [
+        "missing-data"
+      ]
+    },
+    "mice": {
+      "label": "Multiple Imputation by Chained Equations",
+      "methods": [
+        "missing-data"
+      ]
+    },
+    "missingness-diagnostics": {
+      "label": "Missingness Diagnostics",
+      "methods": [
+        "missing-data"
+      ]
+    },
+    "sensitivity-analysis": {
+      "label": "Sensitivity Analysis",
+      "methods": [
+        "missing-data",
+        "statistical-computing"
+      ]
+    },
+    "multilevel-modeling": {
+      "label": "Multilevel Modeling",
+      "methods": [
+        "longitudinal-multilevel"
+      ]
+    },
+    "longitudinal-analysis": {
+      "label": "Longitudinal Analysis",
+      "methods": [
+        "longitudinal-multilevel"
+      ]
+    },
+    "mixed-effects-modeling": {
+      "label": "Mixed-Effects Modeling",
+      "methods": [
+        "longitudinal-multilevel"
+      ]
+    },
+    "spatial-analysis": {
+      "label": "Spatial Analysis",
+      "methods": [
+        "spatial-statistics"
+      ]
+    },
+    "population-weighted-geography": {
+      "label": "Population-Weighted Geography",
+      "methods": [
+        "spatial-statistics"
+      ]
+    },
+    "spatial-visualization": {
+      "label": "Spatial Visualization",
+      "methods": [
+        "spatial-statistics",
+        "statistical-computing"
+      ]
+    },
+    "statistical-modeling": {
+      "label": "Statistical Modeling",
+      "methods": [
+        "statistical-computing"
+      ]
+    },
+    "simulation": {
+      "label": "Simulation",
+      "methods": [
+        "statistical-computing"
+      ]
+    },
+    "bootstrap": {
+      "label": "Bootstrap",
+      "methods": [
+        "statistical-computing"
+      ]
+    },
+    "data-visualization": {
+      "label": "Data Visualization",
+      "methods": [
+        "statistical-computing"
+      ]
+    },
+    "reproducible-computing": {
+      "label": "Reproducible Computing",
+      "methods": [
+        "statistical-computing"
+      ]
+    }
+  },
+  "projects": {
+    "ai-governance-non-proliferation": {
+      "id": "ai-governance-non-proliferation",
+      "title": "Artificial Intelligence Governance and Non-Proliferation",
+      "short_title": "AI Governance and Non-Proliferation",
+      "repository": "LystadJS/project-ai-governance-non-proliferation",
+      "url": "https://github.com/LystadJS/project-ai-governance-non-proliferation",
+      "type": "applied-research",
+      "status": "active",
+      "featured": true,
+      "summary": "Public reproducibility layer for applied analysis of AI governance, non-proliferation, institutional process terrain, and multilateral policy using releasable statistical and visualization workflows.",
+      "methods": [
+        {
+          "id": "dimension-reduction",
+          "role": "primary",
+          "techniques": [
+            "multidimensional-scaling"
+          ],
+          "usage": "Uses principal coordinates analysis on a structured process-evidence distance matrix to represent similarity among multilateral venues and processes."
+        },
+        {
+          "id": "statistical-computing",
+          "role": "secondary",
+          "techniques": [
+            "data-visualization",
+            "reproducible-computing"
+          ],
+          "usage": "Uses deterministic R workflows to reproduce process-terrain coordinates, diagnostics, and a publication-style strategic-terrain visualization."
+        }
+      ],
+      "domains": [
+        "emerging-technology",
+        "human-security"
+      ],
+      "contexts": [
+        "united-nations",
+        "multilateral-policy",
+        "applied-analysis"
+      ],
+      "geography": {
+        "scope": "multilateral",
+        "countries": [],
+        "map_countries": [
+          "CN",
+          "US",
+          "AT",
+          "BE",
+          "BG",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "FI",
+          "FR",
+          "DE",
+          "GR",
+          "HU",
+          "IE",
+          "IT",
+          "LV",
+          "LT",
+          "LU",
+          "MT",
+          "NL",
+          "PL",
+          "PT",
+          "RO",
+          "SK",
+          "SI",
+          "ES",
+          "SE",
+          "JP",
+          "KR",
+          "BR",
+          "IN",
+          "IL",
+          "SA",
+          "AE"
+        ],
+        "note": "Mapped countries represent explicit portfolio-facing emerging-technology coverage; the public reproducibility layer itself is multilateral rather than a set of national studies."
+      },
+      "software": [
+        "R"
+      ],
+      "keywords": [
+        "ai-governance",
+        "non-proliferation",
+        "multilateral-governance",
+        "pcoa",
+        "reproducible-research"
+      ],
+      "outputs": [
+        {
+          "type": "portfolio",
+          "label": "Research portfolio entry",
+          "url": "https://lystadjs.github.io/research.html#project-ai-nonproliferation"
+        }
+      ],
+      "access": {
+        "repository_visibility": "public",
+        "data_access": "none",
+        "code_access": "full",
+        "disclosure": "This repository is a sanitized public reproducibility layer. It excludes private source archives, evidence packets, working panels, internal notes, and decision-support materials retained in the private working repository."
+      }
+    },
+    "islamic-state-ethnosectarian-attack-patterns": {
+      "id": "islamic-state-ethnosectarian-attack-patterns",
+      "title": "Counterterrorism, Ethnosectarian Context and Islamic State Attack Patterns",
+      "short_title": "Islamic State Attack Patterns",
+      "repository": "LystadJS/counterterrorism_ethnosectarian_islamic_state",
+      "url": "https://github.com/LystadJS/counterterrorism_ethnosectarian_islamic_state",
+      "type": "academic-research",
+      "status": "active",
+      "featured": true,
+      "summary": "Reproducible analysis of Islamic State-linked attack patterns in Iraq using terrorism-event data, district-level ethnosectarian composition, spatial boundaries, population weighting, diagnostics, and statistical modeling.",
+      "methods": [
+        {
+          "id": "spatial-statistics",
+          "role": "primary",
+          "techniques": [
+            "spatial-analysis",
+            "population-weighted-geography",
+            "spatial-visualization"
+          ],
+          "usage": "Links attack events to Iraqi district geography and population-weighted ethnosectarian composition, with spatial validation and visualization."
+        },
+        {
+          "id": "missing-data",
+          "role": "secondary",
+          "techniques": [
+            "missingness-diagnostics"
+          ],
+          "usage": "Uses explicit missingness audits and diagnostic workflows as part of reproducible event-data preparation and interpretation."
+        },
+        {
+          "id": "statistical-computing",
+          "role": "secondary",
+          "techniques": [
+            "statistical-modeling",
+            "data-visualization",
+            "reproducible-computing"
+          ],
+          "usage": "Uses modular R workflows, saved analytical objects, diagnostics, and publication-oriented figures to make analytical decisions reproducible."
+        }
+      ],
+      "domains": [
+        "political-violence",
+        "terrorism-counterterrorism",
+        "human-security"
+      ],
+      "contexts": [
+        "academic-research",
+        "open-source-intelligence"
+      ],
+      "geography": {
+        "scope": "country-specific",
+        "countries": [
+          "IQ"
+        ],
+        "map_countries": [
+          "IQ"
+        ],
+        "note": "The current repository is centered on district-level empirical analysis in Iraq."
+      },
+      "software": [
+        "R"
+      ],
+      "keywords": [
+        "islamic-state",
+        "terrorism",
+        "ethnosectarian-context",
+        "iraq",
+        "event-data",
+        "reproducible-research"
+      ],
+      "outputs": [
+        {
+          "type": "portfolio",
+          "label": "Academic research portfolio entry",
+          "url": "https://lystadjs.github.io/research.html#paper-target-map"
+        }
+      ],
+      "access": {
+        "repository_visibility": "public",
+        "data_access": "mixed",
+        "code_access": "full",
+        "disclosure": "Public code and derived artifacts are available, while third-party source data remain subject to their original licensing, EULA, citation, and redistribution constraints."
+      }
+    },
+    "un-transcript-voting-alignment": {
+      "id": "un-transcript-voting-alignment",
+      "title": "UN Transcript Intelligence and Dynamic Voting Alignment",
+      "short_title": "UN Transcript and Voting Alignment",
+      "repository": "LystadJS/UN-Transcript-Intelligence-Dynamic-Voting-Alignment",
+      "url": "https://github.com/LystadJS/UN-Transcript-Intelligence-Dynamic-Voting-Alignment",
+      "type": "technical-project",
+      "status": "active",
+      "featured": true,
+      "summary": "Technical project for reproducible United Nations transcript intelligence, structured evidence extraction, and analysis of changing voting alignment across multilateral processes.",
+      "methods": [
+        {
+          "id": "statistical-computing",
+          "role": "primary",
+          "techniques": [
+            "reproducible-computing"
+          ],
+          "usage": "Provides the computational pipeline for collecting, structuring, validating, and linking transcript-derived evidence."
+        },
+        {
+          "id": "network-analysis",
+          "role": "secondary",
+          "techniques": [
+            "dynamic-networks"
+          ],
+          "usage": "Planned analytical layer represents changing actor alignment and relational structure across time."
+        },
+        {
+          "id": "longitudinal-multilevel",
+          "role": "secondary",
+          "techniques": [
+            "longitudinal-analysis"
+          ],
+          "usage": "Planned longitudinal analysis tracks changes in actor positions and alignment across repeated institutional observations."
+        }
+      ],
+      "domains": [],
+      "contexts": [
+        "united-nations",
+        "multilateral-policy",
+        "open-source-intelligence",
+        "applied-analysis"
+      ],
+      "geography": {
+        "scope": "global",
+        "countries": [],
+        "map_countries": [],
+        "note": "The project is institution-centered and potentially global; country coverage should be generated from the observed transcript and voting corpus rather than hard-coded."
+      },
+      "software": [],
+      "keywords": [
+        "un-transcripts",
+        "voting-alignment",
+        "international-institutions",
+        "document-intelligence"
+      ],
+      "outputs": [],
+      "access": {
+        "repository_visibility": "public",
+        "data_access": "none",
+        "code_access": "none",
+        "disclosure": "The public repository is currently a project shell; substantive data, methodology, code, and empirical results are not yet published there."
+      }
+    }
+  }
+}
