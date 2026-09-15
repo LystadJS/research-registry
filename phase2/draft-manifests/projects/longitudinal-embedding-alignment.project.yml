@@ -1,0 +1,37 @@
+schema_version: "1.0"
+project:
+  id: longitudinal-embedding-alignment
+  title: "Longitudinal Embedding Alignment and Relative Movement"
+  short_title: "Longitudinal Embedding Alignment"
+  repository: "LystadJS/draftmapR"
+  type: software
+  status: active
+  featured: true
+  summary: "R package development for aligning repeated low-dimensional coordinate maps, tracking reference-relative movement, handling changing entity sets, and diagnosing correspondence across repeated embeddings."
+methods:
+  - id: dimension-reduction
+    role: primary
+    techniques: [pca, multidimensional-scaling, procrustes-alignment]
+    usage: "Supports PCA and classical multidimensional-scaling embeddings and aligns repeated maps with orthogonal Procrustes transformations."
+  - id: longitudinal-multilevel
+    role: secondary
+    techniques: [longitudinal-analysis]
+    usage: "Treats repeated coordinate maps as longitudinal representations and measures entity movement across repeated observations."
+  - id: statistical-computing
+    role: secondary
+    techniques: [data-visualization, reproducible-computing]
+    usage: "Implements transformation diagnostics, reusable R functions, tests, documentation, and descriptive trajectory visualization."
+domains: []
+contexts: [academic-research]
+geography:
+  scope: global
+  countries: []
+  map_countries: []
+  note: "General-purpose statistical software with no inherent geographic scope."
+software: [R]
+keywords: [r-package, embedding-alignment, procrustes, repeated-embeddings, longitudinal-representations]
+access:
+  repository_visibility: private
+  data_access: none
+  code_access: none
+  disclosure: "The package is under private development. Public registry metadata should not imply a released package or stable public API until naming and release status are frozen."

@@ -1,0 +1,125 @@
+schema_version: "1.0"
+phase: 2
+inventory_date: "2026-09-15"
+owner: "LystadJS"
+repository_count: 10
+repositories:
+  - current_repository: "LystadJS/AI-Governance-and-Non-Proliferation-Task-Force"
+    visibility: private
+    architecture_class: research-project
+    subtype: applied-research
+    canonical_id: ai-governance-non-proliferation
+    proposed_repository: "LystadJS/project-ai-governance-non-proliferation"
+    manifest: "draft-manifests/projects/ai-governance-non-proliferation.project.yml"
+    rename_policy: coordinated-later
+    rename_priority: medium
+    readiness: manifest-draft-ready
+    notes: "Current repository contains a PCoA reproduction pipeline and publication-oriented strategic-terrain visualization code. Rename should follow project-scope and visibility review."
+
+  - current_repository: "LystadJS/APSTA-GE-2012-Causal-Inference"
+    visibility: private
+    architecture_class: course
+    subtype: coursework
+    canonical_id: apsta-ge-2012-causal-inference
+    proposed_repository: "LystadJS/course-apsta-ge-2012-causal-inference"
+    manifest: null
+    rename_policy: optional-later
+    rename_priority: low
+    readiness: classified
+    notes: "Course repository. Keep outside the research-project graph under schema v1.0."
+
+  - current_repository: "LystadJS/APSTA-GE-2042-Multilevel-Modeling-Nested-and-Longitudinal-Data"
+    visibility: private
+    architecture_class: course
+    subtype: coursework
+    canonical_id: apsta-ge-2042-multilevel-modeling
+    proposed_repository: "LystadJS/course-apsta-ge-2042-multilevel-modeling"
+    manifest: null
+    rename_policy: optional-later
+    rename_priority: low
+    readiness: classified
+    notes: "Course repository containing reading, lecture, and syllabus materials. Keep outside the research-project graph under schema v1.0."
+
+  - current_repository: "LystadJS/counterterrorism_ethnosectarian_islamic_state"
+    visibility: public
+    architecture_class: research-project
+    subtype: academic-research
+    canonical_id: islamic-state-ethnosectarian-attack-patterns
+    proposed_repository: "LystadJS/project-islamic-state-ethnosectarian-attack-patterns"
+    manifest: "draft-manifests/projects/islamic-state-ethnosectarian-attack-patterns.project.yml"
+    rename_policy: coordinated-later
+    rename_priority: medium
+    readiness: manifest-draft-ready
+    notes: "Mature public research workspace with substantial reproducibility/provenance structure. Existing website and profile links create a coordinated-update requirement before rename."
+
+  - current_repository: "LystadJS/draftmapR"
+    visibility: private
+    architecture_class: software
+    subtype: r-package
+    canonical_id: longitudinal-embedding-alignment
+    proposed_repository: null
+    manifest: "draft-manifests/projects/longitudinal-embedding-alignment.project.yml"
+    rename_policy: hold-until-package-name-frozen
+    rename_priority: blocked
+    readiness: manifest-draft-ready
+    notes: "Repository currently contains the driftmapR package prototype under a nested driftmapR directory. Future repository name should equal the final package name rather than use a project-* prefix."
+
+  - current_repository: "LystadJS/LystadJS"
+    visibility: public
+    architecture_class: presentation-infrastructure
+    subtype: github-profile
+    canonical_id: github-profile
+    proposed_repository: "LystadJS/LystadJS"
+    manifest: null
+    rename_policy: never
+    rename_priority: none
+    readiness: preserve
+    notes: "GitHub profile repository must match the username to render as the profile README."
+
+  - current_repository: "LystadJS/LystadJS.github.io"
+    visibility: public
+    architecture_class: presentation-infrastructure
+    subtype: portfolio-website
+    canonical_id: portfolio-website
+    proposed_repository: "LystadJS/LystadJS.github.io"
+    manifest: null
+    rename_policy: never
+    rename_priority: none
+    readiness: preserve
+    notes: "GitHub Pages portfolio interface. Exact repository name is part of the publishing architecture."
+
+  - current_repository: "LystadJS/research-registry"
+    visibility: public
+    architecture_class: infrastructure
+    subtype: research-registry
+    canonical_id: research-registry
+    proposed_repository: "LystadJS/research-registry"
+    manifest: null
+    rename_policy: never
+    rename_priority: none
+    readiness: canonical
+    notes: "Phase 1 infrastructure repository and authoritative taxonomy/schema source."
+
+  - current_repository: "LystadJS/UN-Transcript-Intelligence-Dynamic-Voting-Alignment"
+    visibility: public
+    architecture_class: research-project
+    subtype: technical-project
+    canonical_id: un-transcript-voting-alignment
+    proposed_repository: "LystadJS/project-un-transcript-voting-alignment"
+    manifest: "draft-manifests/projects/un-transcript-voting-alignment.project.yml"
+    rename_policy: coordinated-later
+    rename_priority: medium
+    readiness: manifest-draft-ready
+    notes: "Public shell for transcript intelligence and changing UN voting alignment. Existing website/profile links require coordinated updates before rename."
+
+  - current_repository: "LystadJS/Unsupervised-Machine-Learning"
+    visibility: public
+    architecture_class: method-hub
+    subtype: methodological-reference
+    canonical_id: unsupervised-learning
+    proposed_repository: "LystadJS/method-unsupervised-learning"
+    manifest: "draft-manifests/methods/unsupervised-learning.method.yml"
+    rename_policy: coordinated-later
+    rename_priority: high
+    readiness: manifest-draft-ready
+    notes: "Existing documentation-only reference repository already functions conceptually as the umbrella unsupervised-learning method hub. Website/profile links require coordinated updates before rename."
